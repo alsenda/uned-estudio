@@ -6,7 +6,7 @@ import { el } from "./dom.js";
 import { icon } from "./icons.js";
 import { renderPassage } from "./annotated.js";
 import { openEntity } from "./cards.js";
-import { sourceLink } from "./source-link.js";
+import { originalLink, sourceLink } from "./source-link.js";
 import { navigate } from "./router.js";
 import { setTopbarContext, refreshRailStreak } from "./main.js";
 import { showStudyHome } from "./subjects.js";
@@ -41,6 +41,7 @@ export function documentCard(doc, { compact = false } = {}) {
       { className: "study-card-actions" },
       el("button", { className: "btn-mark", onClick: () => navigate(`estudiar/${doc.id}`) }, icon("book-open", { size: 15 }), "Leer"),
       el("button", { className: "btn-ghost", onClick: () => navigate(`estudiar/${doc.id}/quiz`) }, icon("layers", { size: 15 }), "Estudiar"),
+      originalLink(doc),
     ),
   );
   return card;
@@ -93,8 +94,13 @@ async function showReader(documentId, focus = {}) {
       el(
         "div",
         { className: "reader-header" },
-        el("a", { href: "#/estudiar" }, "← Estudiar"),
-        el("h2", { className: "pane-heading" }, document_.title),
+        el("a", { href: "#/estudiar", className: "reader-back" }, "← Estudiar"),
+        el(
+          "div",
+          { className: "reader-title" },
+          el("h2", { className: "pane-heading" }, document_.title),
+          originalLink(document_, { newTab: true }),
+        ),
       ),
     );
     if (inconsistencies.length) view.append(inconsistencyPanel(inconsistencies));

@@ -9,7 +9,7 @@ import { uned, study, ApiError } from "./api.js";
 import { el } from "./dom.js";
 import { renderMarkdown } from "./markdown.js";
 import { navigate } from "./router.js";
-import { sourceLink } from "./source-link.js";
+import { originalLink, sourceLink } from "./source-link.js";
 import { subjectByFolder } from "./plan-semestre.js";
 import { isNow } from "./syllabus.js";
 
@@ -263,6 +263,7 @@ function renderSyllabus(subject, data, askBox) {
           { className: "syllabus-actions" },
           el("button", { className: "btn-mark", type: "button", onClick: () => navigate(`estudiar/${doc.id}/quiz`) }, `Practicar · ${set.question_count} preguntas`),
           el("button", { className: "btn-ghost", type: "button", onClick: () => navigate(`estudiar/${doc.id}`) }, "Leer"),
+          originalLink(doc, { label: "Texto original" }),
           toggle,
           el("button", { className: "btn-ghost", type: "button", onClick: () => askBox.focusTopic(item.id) }, "Preguntar"),
         ),

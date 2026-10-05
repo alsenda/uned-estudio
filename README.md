@@ -75,7 +75,7 @@ gráfica potente las respuestas tardan entre 20 segundos y un par de minutos: es
 | **Inicio** | Resumen de tu semestre, qué toca esta semana y cuántas tarjetas tienes pendientes de repaso hoy. |
 | **Documentos** | Navega por las carpetas de cada asignatura y abre PDFs, resúmenes y apuntes. |
 | **Buscar** | Haz preguntas en lenguaje normal. Puedes limitar la búsqueda a una asignatura. |
-| **Estudiar** | Elige asignatura → ves su temario, abres los documentos anotados (pulsa en las palabras resaltadas para ver su explicación) y haces el quiz y las tarjetas. Cada pregunta tiene un enlace **«Ver en el texto»** que te lleva al párrafo donde está la respuesta. |
+| **Estudiar** | Elige asignatura → ves su temario, abres los documentos anotados (pulsa en las palabras resaltadas para ver su explicación) y haces el quiz y las tarjetas. Cada pregunta tiene un enlace **«Ver en el texto»** que te lleva al párrafo donde está la respuesta, y cada documento anotado enlaza con su **texto original** (el PDF). |
 | **Calendario** | Tutorías, pruebas presenciales y plazos del curso. Puedes añadir tus propios eventos y tareas. |
 | **Glosario** | Definiciones de términos, que también puedes ampliar. |
 | **Contactos** | Profesorado y negociados, con sus correos. |
