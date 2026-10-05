@@ -226,3 +226,10 @@ UNED/
 Los PDFs de `docs/` son guías docentes y materiales publicados por la UNED, y las fichas de estudio son
 resúmenes de apoyo hechos por estudiantes: **no sustituyen a la guía de la asignatura ni al equipo docente**.
 Comprueba siempre fechas y criterios de evaluación en el curso virtual (aLF/Ágora).
+
+## Licencia
+
+El **código** de este proyecto se publica con licencia [MIT](LICENSE): puedes usarlo, copiarlo y
+modificarlo libremente. La licencia **no cubre** los materiales de terceros incluidos en `docs/`
+(guías docentes y documentos de la UNED, apuntes y libros), que pertenecen a sus autores y a la UNED,
+ni las tipografías de `frontend/fonts/` (licencia SIL OFL, cada una con la suya).
