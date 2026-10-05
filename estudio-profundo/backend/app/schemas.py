@@ -78,6 +78,16 @@ class QuestionTags(BaseModel):
     topics: list[str] = Field(default_factory=list, max_length=8)
 
 
+class QuestionSourceFile(BaseModel):
+    """Optional pointer from a question to the text that backs it, so the UI can
+    offer "Ver en el texto". ``document_id`` defaults to the question set's id
+    (they are the same slug by convention)."""
+
+    passage_id: str = Field(min_length=1)
+    entity_id: str | None = None
+    document_id: str | None = None
+
+
 class QuestionFile(BaseModel):
     id: str = Field(pattern=r"^[a-z0-9][a-z0-9-]{1,60}$")
     type: QuestionType
@@ -88,6 +98,7 @@ class QuestionFile(BaseModel):
     answer_notes: str = Field(min_length=10)
     difficulty_rationale: str = Field(min_length=5)
     tags: QuestionTags
+    source: QuestionSourceFile | None = None
 
     @model_validator(mode="after")
     def check_type_consistency(self) -> "QuestionFile":
@@ -130,6 +141,7 @@ class QuestionOut(BaseModel):
     answer_notes: str
     difficulty_rationale: str
     tags: QuestionTags
+    source: QuestionSourceFile | None = None
 
 
 class QuestionSetSummary(BaseModel):

@@ -6,7 +6,7 @@
     {
       "id": "p-logica-implicacion",
       "heading": "1.1 Lógica y teoría axiomática de conjuntos",
-      "text_es": "La matemática no se escribe ni se comunica con cadenas de símbolos lógicos: se apoya sobre todo en una teoría de conjuntos ingenua y deja la teoría axiomática como un horizonte teórico. Por eso el libro reduce la lógica a dos símbolos, «⟹» y «⟺», y prefiere el lenguaje natural. Decir P ⟹ Q significa solo que no se cumple «P y no Q» para ningún valor de las variables: no expresa causa ni orden en el tiempo.",
+      "text_es": "La matemática no se escribe ni se comunica con cadenas de símbolos lógicos: se apoya sobre todo en una teoría de conjuntos ingenua y deja la teoría axiomática como un horizonte teórico. Por eso el libro reduce la lógica a dos símbolos, «⟹» y «⟺», y prefiere el lenguaje natural. Decir P ⟹ Q significa solo que no se cumple «P y no Q» para ningún valor de las variables: no expresa causa ni orden en el tiempo. Los ejemplos cotidianos como «si llueve, me mojo» confunden más que aclaran, porque arrastran causalidad o conexión temporal; los mejores ejemplos salen de las propias matemáticas.",
       "spans": [
         {
           "start": 103,
@@ -121,7 +121,7 @@
     {
       "id": "p-universo",
       "heading": "1.2 Los pisos del edificio matemático",
-      "text_es": "La jerarquía A, ℘(A), ℘(℘(A))… es ilimitada. En la práctica se trabaja dentro de un único universo U: los x ∈ U son la planta baja, ℘(U) es el primer piso y ℘(℘(U)) el segundo. Si U = ℝ, un número real a está en la planta baja; un intervalo [a, b] sube al primer piso; y la colección de intervalos que contienen a está en el segundo. Cada piso es un nivel más de empaquetado, no un objeto más grande. La regla implícita es no bajar nunca al sótano y rara vez pasar del tercer piso.",
+      "text_es": "La jerarquía A, ℘(A), ℘(℘(A))… es ilimitada. En la práctica se trabaja dentro de un único universo U: los x ∈ U son la planta baja, ℘(U) es el primer piso y ℘(℘(U)) el segundo. Si U = ℝ, un número real a está en la planta baja; un intervalo [a, b] sube al primer piso; y la colección de intervalos que contienen a está en el segundo. Cada piso es un nivel más de empaquetado, no un objeto más grande. La regla implícita es no bajar nunca al sótano y rara vez pasar del tercer piso. En la práctica nos conformamos con el valor de un número real y nunca nos preguntamos qué hay «dentro» de él.",
       "spans": [
         {
           "start": 90,
@@ -429,7 +429,7 @@
       "id": "conjunto-potencia",
       "name": "Conjunto potencia ℘(X)",
       "level": 1,
-      "description_es": "℘(X) = {A : A ⊂ X}: el conjunto de todos los subconjuntos de X. ℘({a, b}) = {∅, {a}, {b}, {a, b}}. Siempre contiene al vacío y al propio X. Requiere un axioma.",
+      "description_es": "℘(X) = {A : A ⊂ X}: el conjunto de todos los subconjuntos de X. ℘({a, b}) = {∅, {a}, {b}, {a, b}}. Siempre contiene al vacío y al propio X. Requiere un axioma. Complemento (no está en el libro): si X tiene n elementos, ℘(X) tiene 2ⁿ, porque cada elemento está o no está en cada subconjunto.",
       "description_spans": [
         {
           "start": 119,
@@ -481,7 +481,7 @@
       "id": "n-tupla",
       "name": "n-tupla",
       "level": 2,
-      "description_es": "(a₁, …, aₙ) = ((a₁, …, aₙ₋₁), aₙ): ristra de n elementos, posiblemente repetidos, en la que importa el orden. Aⁿ es el conjunto de las n-tuplas con componentes en A.",
+      "description_es": "(a₁, …, aₙ) = ((a₁, …, aₙ₋₁), aₙ): ristra de n elementos, posiblemente repetidos, en la que importa el orden. Aⁿ es el conjunto de las n-tuplas con componentes en A. Complemento (no está en el libro): si A tiene m elementos, Aⁿ tiene mⁿ, igual que A² tiene m².",
       "description_spans": [],
       "relationships": [],
       "external_references": [],

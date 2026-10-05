@@ -23,6 +23,7 @@ from app.models import (
     Passage,
     Question,
     QuestionSet,
+    QuestionSource,
     QuizSession,
 )
 
@@ -50,6 +51,7 @@ def delete_document(session: Session, document_id: str) -> None:
     if question_set is not None:
         question_id_subquery = session.query(Question.id).filter(Question.set_id == document_id)
         session.execute(delete(Answer).where(Answer.question_id.in_(question_id_subquery)))
+        session.execute(delete(QuestionSource).where(QuestionSource.question_id.in_(question_id_subquery)))
         session.execute(delete(QuizSession).where(QuizSession.track == document_id))
         session.execute(delete(Question).where(Question.set_id == document_id))
         session.delete(question_set)

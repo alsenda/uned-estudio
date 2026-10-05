@@ -71,6 +71,24 @@ def main() -> int:
         if doc is None and quiz is None:
             print(f"skip  {slug}: no document.json or quiz.json found")
 
+    docs_by_id = {d.id: d for d in documents}
+    for quiz in quizzes:
+        for question in quiz.questions:
+            ref = question.source
+            if ref is None:
+                continue
+            doc = docs_by_id.get(ref.document_id or quiz.id)
+            if doc is None:
+                print(f"FAIL  {quiz.id}/{question.id}: source points to unknown document {ref.document_id or quiz.id!r}")
+                failed = True
+                continue
+            if ref.passage_id not in {p.id for p in doc.passages}:
+                print(f"FAIL  {quiz.id}/{question.id}: unknown passage {ref.passage_id!r}")
+                failed = True
+            if ref.entity_id is not None and ref.entity_id not in {e.id for e in doc.entities}:
+                print(f"FAIL  {quiz.id}/{question.id}: unknown entity {ref.entity_id!r}")
+                failed = True
+
     if failed:
         return 1
     if args.validate:

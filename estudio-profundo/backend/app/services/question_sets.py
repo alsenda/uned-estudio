@@ -6,8 +6,8 @@ import random
 from sqlalchemy import exists, select
 from sqlalchemy.orm import Session
 
-from app.models import Answer, Question, QuestionSet
-from app.schemas import QuestionOut, QuestionSetFile, QuestionTags, TypicalityTag
+from app.models import Answer, Question, QuestionSet, QuestionSource
+from app.schemas import QuestionOut, QuestionSetFile, QuestionSourceFile, QuestionTags, TypicalityTag
 
 
 def qualified_question_id(set_id: str, question_id: str) -> str:
@@ -49,6 +49,16 @@ def upsert_question_set(session: Session, data: QuestionSetFile) -> QuestionSet:
         question.difficulty_tag = file_question.tags.difficulty
         question.typicality_tag = file_question.tags.typicality
         question.topic_tags = file_question.tags.topics
+        ref = file_question.source
+        if ref is None:
+            question.source = None
+        else:
+            question.source = QuestionSource(
+                question_id=question_id,
+                document_id=ref.document_id or data.id,
+                passage_id=ref.passage_id,
+                entity_id=ref.entity_id,
+            )
         session.add(question)
 
     session.commit()
@@ -104,4 +114,11 @@ def question_out(question: Question) -> QuestionOut:
         answer_notes=question.answer_notes,
         difficulty_rationale=question.difficulty_rationale,
         tags=tags_of(question),
+        source=None
+        if question.source is None
+        else QuestionSourceFile(
+            document_id=question.source.document_id,
+            passage_id=question.source.passage_id,
+            entity_id=question.source.entity_id,
+        ),
     )

@@ -52,6 +52,24 @@ modelo local — ver la discusión en el historial del proyecto UNED sobre por q
 pequeños no son fiables generando grafos de entidades ni preguntas con sentido sin
 supervisión).
 
+## Enlace de cada pregunta al texto («Ver en el texto»)
+
+Cada pregunta de `quiz.json` puede llevar un campo opcional `source` que dice en qué parte del
+documento anotado se apoya. En la web aparece como un enlace «Ver en el texto» (en la lista de
+preguntas y en el reverso de cada tarjeta) que abre «Leer» desplazado a ese pasaje y con la ficha de
+la idea ya abierta:
+
+```json
+"source": { "passage_id": "p-funciones", "entity_id": "inyectiva" }
+```
+
+- `passage_id` y `entity_id` son los ids **cortos** de `document.json` (sin `documento::`).
+  `entity_id` es opcional. `document_id` también, y por defecto es el del propio conjunto de preguntas.
+- `scripts/seed.py` lo valida: falla si el pasaje o la idea no existen en el documento.
+- Convención al crear preguntas: toda respuesta debe poder comprobarse en «Leer» (pasajes o fichas).
+  Si una pregunta necesita un dato que no está en el libro, añádelo a la ficha marcado como
+  «Complemento (no está en el libro)».
+
 ## Densidad de contenido (repetición espaciada)
 
 Desde que existe repaso espaciado real (`CardState`/FSRS, ver `services/scheduling.py`),

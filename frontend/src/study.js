@@ -6,6 +6,7 @@ import { el } from "./dom.js";
 import { icon } from "./icons.js";
 import { renderPassage } from "./annotated.js";
 import { openEntity } from "./cards.js";
+import { sourceLink } from "./source-link.js";
 import { navigate } from "./router.js";
 import { setTopbarContext, refreshRailStreak } from "./main.js";
 import { showStudyHome } from "./subjects.js";
@@ -77,7 +78,7 @@ export async function showDocumentGrid() {
   root.replaceChildren(el("div", { className: "study-grid" }, ...docs.map((d) => documentCard(d))));
 }
 
-async function showReader(documentId) {
+async function showReader(documentId, focus = {}) {
   root.replaceChildren(el("p", { className: "hint" }, "Cargando…"));
   void study.logAccess("document", documentId);
   try {
@@ -99,11 +100,26 @@ async function showReader(documentId) {
     if (inconsistencies.length) view.append(inconsistencyPanel(inconsistencies));
     document_.passages.forEach((p) => view.append(renderPassage(p, openEntity)));
     root.replaceChildren(view);
+    focusPassage(documentId, focus);
   } catch (error) {
     root.replaceChildren(
       el("div", { className: "error-banner" }, error instanceof ApiError ? error.message : "No se pudo cargar el documento."),
     );
   }
+}
+
+/** Llegada desde "Ver en el texto": desplaza al pasaje, lo resalta un momento y abre la idea. */
+function focusPassage(documentId, { passageId, entityId } = {}) {
+  if (!passageId) return;
+  // El API cualifica los ids como "<documento>::<id>"; la URL lleva solo el id corto.
+  const qualify = (id) => `${documentId}::${id}`;
+  const target = document.getElementById(`passage-${qualify(passageId)}`);
+  if (target) {
+    target.scrollIntoView({ block: "center", behavior: "smooth" });
+    target.classList.add("passage-focus");
+    setTimeout(() => target.classList.remove("passage-focus"), 2600);
+  }
+  if (entityId) openEntity(qualify(entityId));
 }
 
 function inconsistencyPanel(items) {
@@ -316,6 +332,7 @@ function fillMcBack(back, question, chosenIndex, result, next) {
       result.correct ? "" : `Elegiste: ${options[chosenIndex] ?? ""}\nRespuesta correcta: ${correctText}\n\n`,
       result.answer_notes,
     ),
+    sourceLink(question, { newTab: true }),
     el("div", { className: "card-actions" }, el("button", { onClick: next }, "Siguiente tarjeta →")),
   );
 }
@@ -325,6 +342,7 @@ function fillFlashcardBack(back, question, onRate) {
   back.replaceChildren(
     el("div", { className: "verdict" }, "Respuesta modelo"),
     el("div", { className: "answer-notes" }, question.answer_notes),
+    sourceLink(question, { newTab: true }),
     el("div", { className: "hint" }, "¿Cómo se compara con lo que habrías respondido? Sé honesto."),
     el(
       "div",
@@ -384,12 +402,13 @@ async function showSummary(session, outcomes) {
 export function initStudy() {
   document.addEventListener("activate-section", (ev) => {
     if (ev.detail.section !== "estudiar") return;
-    const [documentId, sub] = ev.detail.rest;
+    const [documentId, sub, passageId, entityId] = ev.detail.rest;
     if (documentId === "repasar") startReview();
     else if (!documentId) showStudyHome(root, null);
     else if (documentId === "materia") showStudyHome(root, sub ?? null);
     else if (documentId === "documentos") showDocumentGrid();
     else if (sub === "quiz") startQuiz(documentId);
+    else if (sub === "leer") showReader(documentId, { passageId, entityId });
     else showReader(documentId);
   });
 }

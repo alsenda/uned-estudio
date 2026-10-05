@@ -67,6 +67,23 @@ class Question(Base):
     topic_tags: Mapped[list[str]] = mapped_column(JSON, default=list)
 
     question_set: Mapped[QuestionSet] = relationship(back_populates="questions")
+    source: Mapped["QuestionSource | None"] = relationship(
+        uselist=False, lazy="joined", cascade="all, delete-orphan"
+    )
+
+
+class QuestionSource(Base):
+    """Where in the annotated document a question comes from (optional): the
+    passage to scroll to and, if any, the entity card to open. A sibling table,
+    not columns on ``Question``, for the same no-migrations reason as
+    ``CardState`` below: ``create_all`` adds new tables to an existing DB."""
+
+    __tablename__ = "question_sources"
+
+    question_id: Mapped[str] = mapped_column(ForeignKey("questions.id"), primary_key=True)
+    document_id: Mapped[str] = mapped_column(String(200))
+    passage_id: Mapped[str] = mapped_column(String(200))
+    entity_id: Mapped[str | None] = mapped_column(String(200), default=None)
 
 
 class CardState(Base):

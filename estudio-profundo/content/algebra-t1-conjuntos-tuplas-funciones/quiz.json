@@ -25,6 +25,10 @@
         "topics": [
           "lógica"
         ]
+      },
+      "source": {
+        "passage_id": "p-logica-implicacion",
+        "entity_id": "implicacion"
       }
     },
     {
@@ -40,6 +44,10 @@
         "topics": [
           "lógica"
         ]
+      },
+      "source": {
+        "passage_id": "p-logica-implicacion",
+        "entity_id": "implicacion"
       }
     },
     {
@@ -55,6 +63,10 @@
         "topics": [
           "lógica"
         ]
+      },
+      "source": {
+        "passage_id": "p-logica-implicacion",
+        "entity_id": "doble-implicacion"
       }
     },
     {
@@ -77,6 +89,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-logica-implicacion",
+        "entity_id": "teoria-ingenua"
       }
     },
     {
@@ -92,6 +108,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-logica-implicacion",
+        "entity_id": "teoria-ingenua"
       }
     },
     {
@@ -107,6 +127,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-logica-implicacion",
+        "entity_id": "teoria-axiomatica"
       }
     },
     {
@@ -129,6 +153,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-pertenencia",
+        "entity_id": "pertenencia"
       }
     },
     {
@@ -144,6 +172,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-pertenencia",
+        "entity_id": "pertenencia"
       }
     },
     {
@@ -166,6 +198,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-pertenencia",
+        "entity_id": "conjunto-vacio"
       }
     },
     {
@@ -188,6 +224,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-subconjuntos",
+        "entity_id": "conjunto-vacio"
       }
     },
     {
@@ -210,6 +250,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-llaves",
+        "entity_id": "por-condicion"
       }
     },
     {
@@ -225,6 +269,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-llaves",
+        "entity_id": "por-extension"
       }
     },
     {
@@ -247,6 +295,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-llaves",
+        "entity_id": "por-condicion"
       }
     },
     {
@@ -269,6 +321,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-llaves",
+        "entity_id": "por-condicion"
       }
     },
     {
@@ -291,6 +347,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-operaciones",
+        "entity_id": "interseccion"
       }
     },
     {
@@ -306,6 +366,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-operaciones",
+        "entity_id": "interseccion"
       }
     },
     {
@@ -328,6 +392,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-operaciones",
+        "entity_id": "union"
       }
     },
     {
@@ -343,6 +411,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-operaciones",
+        "entity_id": "union"
       }
     },
     {
@@ -365,6 +437,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-operaciones",
+        "entity_id": "complementario-relativo"
       }
     },
     {
@@ -380,6 +456,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-operaciones",
+        "entity_id": "complementario-relativo"
       }
     },
     {
@@ -402,6 +482,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-operaciones",
+        "entity_id": "resta-de-conjuntos"
       }
     },
     {
@@ -417,6 +501,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-operaciones",
+        "entity_id": "resta-de-conjuntos"
       }
     },
     {
@@ -439,6 +527,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-subconjuntos",
+        "entity_id": "subconjunto"
       }
     },
     {
@@ -461,6 +553,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-subconjuntos",
+        "entity_id": "subconjunto"
       }
     },
     {
@@ -483,6 +579,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-subconjuntos",
+        "entity_id": "conjunto-potencia"
       }
     },
     {
@@ -505,6 +605,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-subconjuntos",
+        "entity_id": "conjunto-potencia"
       }
     },
     {
@@ -527,6 +631,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-subconjuntos",
+        "entity_id": "conjunto-potencia"
       }
     },
     {
@@ -549,6 +657,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-universo",
+        "entity_id": "universo"
       }
     },
     {
@@ -564,6 +676,10 @@
         "topics": [
           "conjuntos"
         ]
+      },
+      "source": {
+        "passage_id": "p-universo",
+        "entity_id": "universo"
       }
     },
     {
@@ -587,6 +703,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "par-ordenado"
       }
     },
     {
@@ -603,6 +723,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "par-ordenado"
       }
     },
     {
@@ -626,6 +750,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "producto-cartesiano"
       }
     },
     {
@@ -649,6 +777,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "producto-cartesiano"
       }
     },
     {
@@ -665,6 +797,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "producto-cartesiano"
       }
     },
     {
@@ -681,6 +817,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "n-tupla"
       }
     },
     {
@@ -704,6 +844,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "n-tupla"
       }
     },
     {
@@ -727,6 +871,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "igualdad-tuplas"
       }
     },
     {
@@ -750,6 +898,10 @@
           "tuplas",
           "producto cartesiano"
         ]
+      },
+      "source": {
+        "passage_id": "p-tuplas",
+        "entity_id": "igualdad-tuplas"
       }
     },
     {
@@ -766,6 +918,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "relacion"
       }
     },
     {
@@ -789,6 +945,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "relacion"
       }
     },
     {
@@ -812,6 +972,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "relacion-orden"
       }
     },
     {
@@ -835,6 +999,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "relacion-orden"
       }
     },
     {
@@ -858,6 +1026,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "transitividad"
       }
     },
     {
@@ -881,6 +1053,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "orden-total"
       }
     },
     {
@@ -904,6 +1080,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "orden-total"
       }
     },
     {
@@ -927,6 +1107,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "orden-parcial"
       }
     },
     {
@@ -950,6 +1134,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "cota-superior"
       }
     },
     {
@@ -966,6 +1154,10 @@
           "relaciones",
           "orden"
         ]
+      },
+      "source": {
+        "passage_id": "p-relaciones-orden",
+        "entity_id": "cota-superior"
       }
     },
     {
@@ -988,6 +1180,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "funcion"
       }
     },
     {
@@ -1003,6 +1199,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "funcion"
       }
     },
     {
@@ -1025,6 +1225,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "funcion"
       }
     },
     {
@@ -1040,6 +1244,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "funcion"
       }
     },
     {
@@ -1055,6 +1263,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "dominio"
       }
     },
     {
@@ -1077,6 +1289,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "imagen"
       }
     },
     {
@@ -1092,6 +1308,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "imagen"
       }
     },
     {
@@ -1114,6 +1334,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "recorrido"
       }
     },
     {
@@ -1129,6 +1353,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "imagen-inversa"
       }
     },
     {
@@ -1151,6 +1379,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "imagen-inversa"
       }
     },
     {
@@ -1173,6 +1405,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "inyectiva"
       }
     },
     {
@@ -1188,6 +1424,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "inyectiva"
       }
     },
     {
@@ -1203,6 +1443,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "biyectiva"
       }
     },
     {
@@ -1225,6 +1469,10 @@
         "topics": [
           "funciones"
         ]
+      },
+      "source": {
+        "passage_id": "p-funciones",
+        "entity_id": "biyectiva"
       }
     }
   ]

@@ -24,7 +24,7 @@ export function renderPassage(passage, onEntityClick) {
   }
   if (cursor < text.length) inline.append(text.slice(cursor));
 
-  const wrapper = el("div", { className: "passage" });
+  const wrapper = el("div", { className: "passage", id: passage.id ? `passage-${passage.id}` : undefined });
   if (passage.heading) wrapper.append(el("h3", { className: "passage-heading" }, passage.heading));
   wrapper.append(inline);
   if (passage.images?.length) wrapper.append(el("div", { className: "passage-images" }, ...passage.images.map(imageCard)));
