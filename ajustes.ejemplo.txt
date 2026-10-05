@@ -1,0 +1,18 @@
+# Ajustes opcionales de la IA. Para usarlos:
+#   1) Copia este fichero y llama a la copia  ajustes.txt   (en esta misma carpeta)
+#   2) Quita el # del principio de la línea que quieras activar
+#   3) Cierra y vuelve a abrir Iniciar.bat
+# Las líneas que empiezan por # se ignoran. Si no existe ajustes.txt se usan los valores por defecto.
+
+# Modelo que redacta las respuestas (por defecto: qwen2.5:7b-instruct, ~4,7 GB, pide ~8 GB de RAM)
+# Para ordenadores modestos:
+# UNED_LLM_MODEL=llama3.2
+# Para ordenadores potentes (16 GB de RAM o más):
+# UNED_LLM_MODEL=qwen2.5:14b-instruct
+
+# Modelo que "entiende" el significado de los textos al buscar (por defecto: nomic-embed-text, ~270 MB)
+# Cambiarlo obliga a reindexar todos los documentos (se hace solo, tarda unos minutos).
+# UNED_EMBED_MODEL=nomic-embed-text
+
+# Dónde está Ollama. Solo si lo tienes en OTRO ordenador de tu red (por defecto: este mismo ordenador)
+# OLLAMA_HOST=http://192.168.1.50:11434

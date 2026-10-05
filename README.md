@@ -12,7 +12,7 @@ Una web que se abre en tu ordenador con **todo el material del grado en un solo 
 **Es gratis, funciona sin internet una vez instalado y tus datos no salen de tu ordenador**
 (la IA corre en tu propio PC, no se envía nada a ninguna nube).
 
-🎬 **Míralo en acción** (2 min): [media/demo.webm](media/demo.webm) — pulsa «Download» o «View raw» para verlo.
+🎬 **Míralo en acción** (2 min): [media/demo.mp4](media/demo.mp4) — pulsa «Download» o «View raw» para verlo.
 
 ---
 
@@ -106,6 +106,66 @@ carpeta actual. Tus tareas, contactos y progreso de estudio **no se pierden** mi
 
 ---
 
+## Cambiar la IA que usa el buscador (opcional)
+
+**Si tu ordenador es normal, no hace falta que toques nada**: todo viene ya preparado y probado con
+los modelos que usamos nosotros. Lee esto solo si el buscador va muy lento, si tu PC es muy potente o si
+quieres probar otra IA.
+
+### Qué es cada cosa
+
+El buscador con IA usa **dos «cerebros»** que se ejecutan dentro de **Ollama** (el programa del Paso 2):
+
+| Pieza | Para qué sirve (con una analogía) | Qué usamos nosotros | Tamaño |
+|---|---|---|---|
+| **Modelo de búsqueda** (`UNED_EMBED_MODEL`) | El *bibliotecario*: lee todos tus documentos y los ordena por significado, para encontrar los párrafos que tratan de lo que preguntas. | `nomic-embed-text` | ~270 MB |
+| **Modelo de respuesta** (`UNED_LLM_MODEL`) | El *redactor*: lee esos párrafos y te escribe la respuesta en español citando las fuentes. | `qwen2.5:7b-instruct` | ~4,7 GB |
+| **Dirección de Ollama** (`OLLAMA_HOST`) | *Dónde* está Ollama. Casi siempre es tu propio ordenador. | `http://localhost:11434` (este mismo PC) | — |
+
+Estos tres valores son los **de fábrica**, y son con los que se ha probado todo.
+
+### Qué modelo elegir según tu ordenador
+
+| Tu ordenador | Qué poner en `UNED_LLM_MODEL` | Notas |
+|---|---|---|
+| **Normal** (8 GB de RAM o más) | *No pongas nada* (usa `qwen2.5:7b-instruct`) | Es el probado. Responde en español de forma fiable. |
+| **Modesto** (menos de 8 GB de RAM, o va muy lento) | `llama3.2` (~2 GB) | Más rápido y ligero. *Sin probar a fondo*: puede redactar peor en español o responder más corto. |
+| **Potente** (16 GB de RAM o más, ideal con tarjeta gráfica) | `qwen2.5:14b-instruct` (~9 GB) | Respuestas más cuidadosas, pero más lentas y pesadas. *Sin probar*. |
+
+Deja `UNED_EMBED_MODEL` como está salvo que sepas lo que haces: cambiarlo obliga a **volver a leer
+todos los documentos** (el programa lo hace solo y avisa; tarda unos minutos).
+Puedes ver todos los modelos disponibles en <https://ollama.com/library>.
+
+### Cómo cambiarlo, paso a paso
+
+1. En la carpeta del proyecto hay un fichero llamado **`ajustes.ejemplo.txt`**. Haz una **copia** y
+   renombra la copia a **`ajustes.txt`** (si Windows oculta las extensiones, asegúrate de que no se
+   queda como `ajustes.txt.txt`).
+2. Ábrelo con el **Bloc de notas** (clic derecho → *Abrir con* → *Bloc de notas*).
+3. Quita el `#` del principio de la línea que quieras usar. Por ejemplo, para un ordenador modesto
+   el fichero quedaría así:
+
+   ```
+   UNED_LLM_MODEL=llama3.2
+   ```
+
+   Y si tienes Ollama en otro ordenador de tu casa (caso poco habitual), así:
+
+   ```
+   UNED_LLM_MODEL=qwen2.5:7b-instruct
+   OLLAMA_HOST=http://192.168.1.50:11434
+   ```
+
+4. Guarda, cierra la ventana negra si estaba abierta y vuelve a abrir **`Iniciar.bat`**. Verás el
+   mensaje `Ajuste de ajustes.txt: …` y, si el modelo es nuevo, **lo descargará él solo** (puede tardar).
+5. **Para volver a lo de siempre**, borra `ajustes.txt` y reabre `Iniciar.bat`.
+
+> Los modelos antiguos se quedan guardados en tu disco. Para liberar espacio, abre una consola
+> (tecla Windows → escribe `cmd` → Intro) y ejecuta `ollama list` para verlos y
+> `ollama rm nombre-del-modelo` para borrar uno.
+
+---
+
 ## Si algo falla
 
 | Problema | Solución |
@@ -151,7 +211,9 @@ UNED/
 └── scripts/             # utilidades opcionales (PowerShell)
 ```
 
-- Modelos de Ollama configurables con `UNED_EMBED_MODEL` / `UNED_LLM_MODEL`; host con `OLLAMA_HOST`.
+- Modelos de Ollama configurables con las variables de entorno `UNED_EMBED_MODEL` / `UNED_LLM_MODEL` y el host con
+  `OLLAMA_HOST` (o, sin tocar el sistema, con `ajustes.txt`, que lee `iniciar.py`; ver la sección anterior).
+  Si `iniciar.py` detecta otro `UNED_EMBED_MODEL`, borra `backend/data/chroma` y reindexa.
 - Reindexar a mano: `.venv\Scripts\python.exe -m backend.app.rag.ingest`
 - Consulta por CLI: `.venv\Scripts\python.exe -m backend.app.rag.query "pregunta"`
 - Recargar el contenido de estudio: `cd estudio-profundo/backend && ..\..\.venv\Scripts\python.exe scripts/seed.py`

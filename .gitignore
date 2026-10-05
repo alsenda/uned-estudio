@@ -15,3 +15,6 @@ agenda/todos/*
 contacts/interactions/*
 !contacts/interactions/.gitkeep
 gastos*.xlsx
+
+# Ajustes personales de la IA
+ajustes.txt

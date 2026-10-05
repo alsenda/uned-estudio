@@ -19,6 +19,27 @@ import webbrowser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+
+
+def cargar_ajustes() -> None:
+    """Lee ajustes.txt (si existe): líneas CLAVE=valor, para cambiar de IA sin tocar variables del sistema."""
+    fichero = ROOT / "ajustes.txt"
+    if not fichero.exists():
+        return
+    permitidas = {"UNED_LLM_MODEL", "UNED_EMBED_MODEL", "OLLAMA_HOST"}
+    for linea in fichero.read_text(encoding="utf-8-sig").splitlines():
+        linea = linea.strip()
+        if not linea or linea.startswith("#") or "=" not in linea:
+            continue
+        clave, valor = (x.strip().strip('"').strip("'") for x in linea.split("=", 1))
+        if clave in permitidas and valor:
+            os.environ[clave] = valor
+            print(f"Ajuste de ajustes.txt: {clave} = {valor}")
+
+
+cargar_ajustes()
+if not os.environ.get("OLLAMA_HOST", "http://").startswith("http"):
+    os.environ["OLLAMA_HOST"] = "http://" + os.environ["OLLAMA_HOST"]  # p. ej. "127.0.0.1:11434"
 VENV = ROOT / ".venv"
 PY = VENV / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
 MOTOR = ROOT / "estudio-profundo" / "backend"
@@ -111,7 +132,21 @@ def descargar_modelos() -> bool:
     return True
 
 
+def revisar_modelo_de_embeddings() -> None:
+    """Si cambió UNED_EMBED_MODEL, el índice antiguo no vale: se borra y se rehace."""
+    datos = ROOT / "backend" / "data"
+    marca = datos / "embed_model.txt"
+    actual = MODELOS[0]
+    if marca.exists() and marca.read_text(encoding="utf-8").strip() != actual:
+        print(f"Has cambiado el modelo de búsqueda a {actual}: se rehace el índice desde cero.")
+        shutil.rmtree(datos / "chroma", ignore_errors=True)
+        (datos / "ingest_manifest.json").unlink(missing_ok=True)
+    datos.mkdir(parents=True, exist_ok=True)
+    marca.write_text(actual, encoding="utf-8")
+
+
 def indexar_documentos() -> None:
+    revisar_modelo_de_embeddings()
     paso("Indexando los documentos para el buscador (solo tarda mucho la primera vez)")
     if ejecutar([PY, "-m", "backend.app.rag.ingest"], cwd=ROOT) != 0:
         print("AVISO: no se pudo indexar. Se reintentará la próxima vez.")
