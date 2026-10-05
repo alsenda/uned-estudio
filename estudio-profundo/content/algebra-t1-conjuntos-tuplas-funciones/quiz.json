@@ -1,0 +1,1231 @@
+{
+  "id": "algebra-t1-conjuntos-tuplas-funciones",
+  "title": "Álgebra · Tema I · Conjuntos, tuplas y funciones (1.1–1.4)",
+  "track": "algebra-t1-conjuntos-tuplas-funciones",
+  "level": 1,
+  "description": "Preguntas y tarjetas sobre las secciones 1.1–1.4 del libro de Perán Mazón.",
+  "questions": [
+    {
+      "id": "q-implicacion-significado",
+      "type": "mc",
+      "topic": "Implicación",
+      "prompt": "Según el libro, ¿qué significa «P ⟹ Q» para proposiciones con variables?",
+      "options": [
+        "Que P es la causa de Q",
+        "Que no se cumple «P y no Q» para ningún valor de las variables",
+        "Que Q ocurre siempre después de P en el tiempo",
+        "Que P y Q son equivalentes"
+      ],
+      "correct_index": 1,
+      "answer_notes": "«P ⟹ Q» significa que no se da «P y no Q» para ningún valor de las variables. No hay causalidad ni orden temporal.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "lógica"
+        ]
+      }
+    },
+    {
+      "id": "q-implicacion-ejemplos-cotidianos",
+      "type": "flashcard",
+      "topic": "Implicación",
+      "prompt": "¿Por qué los ejemplos cotidianos tipo «si llueve, me mojo» confunden al explicar la implicación lógica?",
+      "answer_notes": "Porque en la vida real las implicaciones arrastran causalidad o secuencia temporal, que no existen en la implicación matemática; los mejores ejemplos salen del propio terreno de las matemáticas.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "lógica"
+        ]
+      }
+    },
+    {
+      "id": "q-doble-implicacion",
+      "type": "flashcard",
+      "topic": "Doble implicación",
+      "prompt": "¿Qué expresa el símbolo «⟺» en este libro?",
+      "answer_notes": "La implicación en los dos sentidos (P ⟹ Q y Q ⟹ P). El libro usa ⟹ y ⟺ más por brevedad que por rigor.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "lógica"
+        ]
+      }
+    },
+    {
+      "id": "q-ingenua-enfoque",
+      "type": "mc",
+      "topic": "Teoría ingenua",
+      "prompt": "¿Qué enfoque de la teoría de conjuntos sigue el libro?",
+      "options": [
+        "Axiomático riguroso, con todos los axiomas",
+        "Ingenuo: ideas y notaciones intuitivas, sin construir todo desde axiomas",
+        "Solo lógica formal con cuantificadores",
+        "Teoría de categorías"
+      ],
+      "correct_index": 1,
+      "answer_notes": "Descarta el enfoque axiomático y describe las nociones intuitivas y las notaciones que usará.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-ingenua-lectura",
+      "type": "flashcard",
+      "topic": "Teoría ingenua",
+      "prompt": "¿Qué texto clásico recomienda el libro para ampliar la teoría ingenua de conjuntos?",
+      "answer_notes": "El de Halmos, «Naive Set Theory». Enlace: https://es.scribd.com/doc/196856585/Halmos-Naive-Set-Theory-pdf",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "occasional",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-axioma-definicion",
+      "type": "flashcard",
+      "topic": "Teoría axiomática",
+      "prompt": "¿Qué es un axioma y por qué el libro no sigue el enfoque axiomático?",
+      "answer_notes": "Un axioma es una afirmación que se acepta sin demostrar (por ejemplo, el de la unión o el del conjunto potencia). El enfoque axiomático lo construye todo desde ellos y es riguroso pero técnico; el libro lo deja como horizonte y usa la versión ingenua.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-pertenencia-frase",
+      "type": "mc",
+      "topic": "Pertenencia",
+      "prompt": "¿Cuál de estas frases usa bien el lenguaje del libro?",
+      "options": [
+        "«a es un elemento»",
+        "«a es un elemento de A»",
+        "«a es un conjunto de A»",
+        "«a es un subconjunto»"
+      ],
+      "correct_index": 1,
+      "answer_notes": "Nunca se debe decir «a es un elemento», sino «a es un elemento de A»: la pertenencia es una relación.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-pertenencia-simbolos",
+      "type": "flashcard",
+      "topic": "Pertenencia",
+      "prompt": "¿Qué significan ∈ y ∉?",
+      "answer_notes": "b ∈ A: b pertenece a A (es un elemento de A). ∉ es «no pertenece»: tachar un símbolo lo niega.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-vacio-unico",
+      "type": "mc",
+      "topic": "Conjunto vacío",
+      "prompt": "¿Cuántos conjuntos vacíos hay?",
+      "options": [
+        "Uno solo, porque un conjunto queda determinado por sus elementos",
+        "Uno por cada universo",
+        "Infinitos, uno por cada propiedad imposible",
+        "Ninguno: el vacío no es un conjunto"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Solo hay un conjunto vacío: dos conjuntos sin elementos tienen los mismos elementos, luego son iguales.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-vacio-propiedades",
+      "type": "mc",
+      "topic": "Conjunto vacío",
+      "prompt": "¿Qué es cierto para cualquier conjunto A?",
+      "options": [
+        "∅ ⊂ A y ∅ ∈ ℘(A)",
+        "∅ ∈ A",
+        "∅ ⊂ A pero ∅ ∉ ℘(A)",
+        "A ⊂ ∅"
+      ],
+      "correct_index": 0,
+      "answer_notes": "∅ es subconjunto de todo conjunto, y por tanto pertenece a ℘(A). Que ∅ ∈ A solo ocurre en casos concretos.",
+      "difficulty_rationale": "Hay que distinguir ⊂ de ∈",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-extension-vocales",
+      "type": "mc",
+      "topic": "Definición por extensión",
+      "prompt": "¿Cuál es el conjunto {x ∈ {a, b, u} : x es vocal}?",
+      "options": [
+        "{a, u}",
+        "{a, b, u}",
+        "{b}",
+        "∅"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Son vocales a y u; b es consonante.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-extension-orden-repeticiones",
+      "type": "flashcard",
+      "topic": "Definición por extensión",
+      "prompt": "¿Son iguales {a, b}, {b, a} y {a, b, b}?",
+      "answer_notes": "Sí. Un conjunto está determinado solo por sus elementos: ni el orden ni las repeticiones cuentan.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-condicion-mal-formado",
+      "type": "mc",
+      "topic": "Definición por condición",
+      "prompt": "¿Por qué «{B : B tiene más de un elemento}» no está bien formado?",
+      "options": [
+        "Porque no fija el conjunto del que se toman los B",
+        "Porque usa llaves",
+        "Porque «más de un elemento» no es una condición",
+        "Porque B debe ser un número"
+      ],
+      "correct_index": 0,
+      "answer_notes": "En {x ∈ A : condición} hay que referir la condición a un conjunto prefijado A.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-condicion-naturales",
+      "type": "mc",
+      "topic": "Definición por condición",
+      "prompt": "¿Cuál es el conjunto {n ∈ ℕ : n < 7} según el libro?",
+      "options": [
+        "{0, 1, 2, 3, 4, 5, 6}",
+        "{1, 2, 3, 4, 5, 6, 7}",
+        "{1, 2, 3, 4, 5, 6}",
+        "{0, 1, 2, 3, 4, 5, 6, 7}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "En este libro ℕ incluye el 0, y la condición es n < 7, sin incluir el 7.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-interseccion-calculo",
+      "type": "mc",
+      "topic": "Intersección",
+      "prompt": "Con A = {1, 2, 3} y B = {2, 3, 4}, ¿cuánto vale A ∩ B?",
+      "options": [
+        "{2, 3}",
+        "{1, 2, 3, 4}",
+        "{1}",
+        "{4}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "La intersección son los elementos comunes: 2 y 3.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-interseccion-definicion",
+      "type": "flashcard",
+      "topic": "Intersección",
+      "prompt": "¿Cómo se define A ∩ B y qué propiedad tiene?",
+      "answer_notes": "A ∩ B = {x ∈ A : x ∈ B}. Es conmutativa: A ∩ B = B ∩ A.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-union-calculo",
+      "type": "mc",
+      "topic": "Unión",
+      "prompt": "Con A = {1, 2, 3} y B = {2, 3, 4}, ¿cuánto vale A ∪ B?",
+      "options": [
+        "{1, 2, 3, 4}",
+        "{2, 3}",
+        "{1, 4}",
+        "{1, 2, 3, 2, 3, 4}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "La unión reúne los elementos de ambos sin repetir: {1, 2, 3, 4}.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-union-axioma",
+      "type": "flashcard",
+      "topic": "Unión",
+      "prompt": "¿Por qué la unión requiere un axioma propio, a diferencia de la intersección?",
+      "answer_notes": "La intersección se define por condición dentro de un conjunto ya dado (A); la unión crea un conjunto con elementos de ambos, y la teoría necesita un axioma que garantice que existe: A ∪ B = ⋃{A, B}.",
+      "difficulty_rationale": "Combina varias definiciones o exige un contraejemplo",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "occasional",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-complementario-calculo",
+      "type": "mc",
+      "topic": "Complementario relativo",
+      "prompt": "Con A = {1, 2, 5} y B = {1, 2}, ¿cuánto vale A \\ B?",
+      "options": [
+        "{5}",
+        "{1, 2}",
+        "{0, −1, 1, 4, 3}",
+        "∅"
+      ],
+      "correct_index": 0,
+      "answer_notes": "A \\ B son los elementos de A que no están en B: solo el 5.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-complementario-definicion",
+      "type": "flashcard",
+      "topic": "Complementario relativo",
+      "prompt": "¿Qué es el complementario relativo de B en A?",
+      "answer_notes": "A \\ B = {x ∈ A : x ∉ B}: los elementos de A que no pertenecen a B.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-resta-calculo",
+      "type": "mc",
+      "topic": "Resta de conjuntos",
+      "prompt": "Con A = {1, 2, 5} y B = {1, 2} en ℝ, ¿cuánto vale A − B (la resta elemento a elemento)?",
+      "options": [
+        "{0, −1, 1, 4, 3}",
+        "{5}",
+        "{−1, 0, 1}",
+        "{3, 4, 5}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "A − B = {a − b : a ∈ A, b ∈ B}: 1−1=0, 1−2=−1, 2−1=1, 2−2=0, 5−1=4, 5−2=3, es decir {0, −1, 1, 4, 3}.",
+      "difficulty_rationale": "Hay que enumerar todos los pares y quitar repeticiones",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-resta-vs-complementario",
+      "type": "flashcard",
+      "topic": "Resta de conjuntos",
+      "prompt": "¿Por qué no hay que confundir A − B con A \\ B?",
+      "answer_notes": "A \\ B son los elementos de A que no están en B. A − B = {a − b : a ∈ A, b ∈ B} resta todos los pares. Con A = {1, 2, 5} y B = {1, 2}: A \\ B = {5} y A − B = {0, −1, 1, 4, 3}.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-subconjunto-equivalencia",
+      "type": "mc",
+      "topic": "Subconjunto",
+      "prompt": "¿Cuál de estas condiciones equivale a A ⊂ B?",
+      "options": [
+        "A ∩ B = A",
+        "A ∪ B = A",
+        "A ∩ B = ∅",
+        "A \\ B = B"
+      ],
+      "correct_index": 0,
+      "answer_notes": "A ⊂ B equivale a A ∩ B = A y a A ∪ B = B.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-subconjunto-vs-pertenencia",
+      "type": "mc",
+      "topic": "Subconjunto",
+      "prompt": "¿Es cierto que {a} ∈ {a, b}?",
+      "options": [
+        "No: {a} es subconjunto de {a, b}, pero no un elemento suyo",
+        "Sí, porque a ∈ {a, b}",
+        "Sí, porque {a} ⊂ {a, b}",
+        "Depende del universo"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Los elementos de {a, b} son a y b. {a} ⊂ {a, b} es cierto, pero {a} ∈ {a, b} es falso.",
+      "difficulty_rationale": "Es la confusión más típica entre ∈ y ⊂",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-potencia-ejemplo",
+      "type": "mc",
+      "topic": "Conjunto potencia",
+      "prompt": "¿Cuánto vale ℘({a, b})?",
+      "options": [
+        "{∅, {a}, {b}, {a, b}}",
+        "{{a}, {b}}",
+        "{∅, a, b, {a, b}}",
+        "{a, b, ab}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "℘({a, b}) contiene todos los subconjuntos: el vacío, {a}, {b} y {a, b}.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-potencia-tamano",
+      "type": "mc",
+      "topic": "Conjunto potencia",
+      "prompt": "Si X tiene 3 elementos, ¿cuántos elementos tiene ℘(X)?",
+      "options": [
+        "8",
+        "6",
+        "9",
+        "3"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Con 2 elementos salen 4 subconjuntos; con 3, 8 (cada elemento está o no está: 2·2·2).",
+      "difficulty_rationale": "Se deduce del ejemplo de dos elementos",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-potencia-siempre",
+      "type": "mc",
+      "topic": "Conjunto potencia",
+      "prompt": "¿Qué es cierto para cualquier conjunto A?",
+      "options": [
+        "∅ ∈ ℘(A) y A ∈ ℘(A)",
+        "A ∈ A",
+        "℘(A) ⊂ A",
+        "A ⊂ ℘(A)"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Tanto el vacío como el propio A son subconjuntos de A, luego pertenecen a ℘(A).",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-universo-piso",
+      "type": "mc",
+      "topic": "Universo y pisos",
+      "prompt": "Con U = ℝ, ¿en qué piso está un intervalo cerrado [a, b]?",
+      "options": [
+        "En el primer piso, ℘(ℝ)",
+        "En la planta baja",
+        "En el segundo piso",
+        "En el sótano"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Un número real está en la planta baja; un intervalo es un conjunto de reales, luego es elemento de ℘(ℝ).",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-universo-regla",
+      "type": "flashcard",
+      "topic": "Universo y pisos",
+      "prompt": "¿Qué regla implícita sigue la matemática cotidiana sobre los «pisos» de conjuntos?",
+      "answer_notes": "Jamás se baja al sótano (no se pregunta qué hay «dentro» de un elemento de la planta baja) y rara vez se pasa del tercer piso.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "occasional",
+        "topics": [
+          "conjuntos"
+        ]
+      }
+    },
+    {
+      "id": "q-par-por-que",
+      "type": "mc",
+      "topic": "Par ordenado",
+      "prompt": "¿Por qué hace falta definir el par ordenado?",
+      "options": [
+        "Porque {a, b} = {b, a} y necesitamos distinguir el orden",
+        "Porque un conjunto no puede tener dos elementos",
+        "Porque (a, b) siempre es un número",
+        "Porque la pertenencia no es simétrica"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Los conjuntos no guardan orden, así que se define (a, b) = {{a}, {a, b}} para que (a, b) ≠ (b, a) si a ≠ b.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-par-definicion",
+      "type": "flashcard",
+      "topic": "Par ordenado",
+      "prompt": "¿Cómo define el libro el par ordenado (a, b)?",
+      "answer_notes": "(a, b) = {{a}, {a, b}}. Así, si a ≠ b entonces (a, b) ≠ (b, a), y se puede repetir como en (a, a) sin ambigüedad.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-producto-tamano",
+      "type": "mc",
+      "topic": "Producto cartesiano",
+      "prompt": "¿Cuántos elementos tiene {a, b} × {a, b, c}?",
+      "options": [
+        "6",
+        "5",
+        "9",
+        "8"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Hay 2·3 = 6 pares: (a,a), (a,b), (a,c), (b,a), (b,b), (b,c).",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-producto-cuadrado",
+      "type": "mc",
+      "topic": "Producto cartesiano",
+      "prompt": "Si A tiene n elementos, ¿cuántos tiene A²?",
+      "options": [
+        "n²",
+        "2n",
+        "n",
+        "n + n"
+      ],
+      "correct_index": 0,
+      "answer_notes": "A² = A × A tiene n·n = n² pares.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-producto-rectangulo",
+      "type": "flashcard",
+      "topic": "Producto cartesiano",
+      "prompt": "¿Qué conjunto es [1, 5] × [−2, 7)?",
+      "answer_notes": "{(x, y) ∈ ℝ² : 1 ≤ x ≤ 5, −2 ≤ y < 7}: un rectángulo del plano, cerrado en x y abierto por arriba en y.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-ntupla-induccion",
+      "type": "flashcard",
+      "topic": "n-tupla",
+      "prompt": "¿Cómo se define una n-tupla por inducción y qué hay que recordar de ella?",
+      "answer_notes": "(a₁, …, aₙ) = ((a₁, …, aₙ₋₁), aₙ). Basta recordar que es una ristra de n elementos, posiblemente repetidos, donde importa el orden.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-ntupla-cubo",
+      "type": "mc",
+      "topic": "n-tupla",
+      "prompt": "Si A = {0, 1}, ¿cuántos elementos tiene A³?",
+      "options": [
+        "8",
+        "6",
+        "3",
+        "9"
+      ],
+      "correct_index": 0,
+      "answer_notes": "A³ son las ternas con componentes en A: 2·2·2 = 8 (por ejemplo, (0,0,1) y (1,0,1)).",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-tuplas-vs-conjuntos",
+      "type": "mc",
+      "topic": "Igualdad de tuplas",
+      "prompt": "¿Cuál de estas afirmaciones es cierta?",
+      "options": [
+        "(1, 2) ≠ (2, 1) y {1, 2} = {2, 1}",
+        "(1, 2) = (2, 1) y {1, 2} = {2, 1}",
+        "(1, 2) ≠ (2, 1) y {1, 2} ≠ {2, 1}",
+        "(1, 2) = (2, 1) y {1, 2} ≠ {2, 1}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "En una tupla importa el orden; en un conjunto no.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-tuplas-longitud",
+      "type": "mc",
+      "topic": "Igualdad de tuplas",
+      "prompt": "¿Qué relación hay entre (0, 0, 0) y (0, 0)?",
+      "options": [
+        "Son distintas: no tienen la misma longitud",
+        "Son iguales",
+        "Son iguales si 0 = 0",
+        "Depende del conjunto"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Dos tuplas son iguales solo si tienen la misma longitud y coinciden componente a componente.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "tuplas",
+          "producto cartesiano"
+        ]
+      }
+    },
+    {
+      "id": "q-relacion-definicion",
+      "type": "flashcard",
+      "topic": "Relación",
+      "prompt": "¿Qué es una relación en un conjunto X?",
+      "answer_notes": "Un subconjunto ℛ de X × X. Se escribe x₁ ℛ x₂ en lugar de (x₁, x₂) ∈ ℛ.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-relacion-tipo",
+      "type": "mc",
+      "topic": "Relación",
+      "prompt": "Formalmente, una relación en X es...",
+      "options": [
+        "un subconjunto de X × X",
+        "una función de X en X",
+        "un elemento de X",
+        "un subconjunto de X"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Es un subconjunto del producto cartesiano X × X.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-orden-propiedad",
+      "type": "mc",
+      "topic": "Relación de orden",
+      "prompt": "¿Cuál es una de las dos propiedades que definen un orden en el libro?",
+      "options": [
+        "Ningún elemento es estrictamente menor que sí mismo",
+        "Todo elemento es menor que sí mismo",
+        "Si a < b entonces b < a",
+        "Todos los elementos son iguales"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Las dos propiedades son: nadie es estrictamente menor que sí mismo, y si a < b y b < c entonces a < c.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-orden-menor-igual",
+      "type": "mc",
+      "topic": "Relación de orden",
+      "prompt": "En ℕ con el orden usual, ¿es «≤» un orden en el sentido del libro?",
+      "options": [
+        "No: 3 ≤ 3, y el orden del libro es estricto («<»)",
+        "Sí, siempre",
+        "Solo en ℤ",
+        "Solo si es parcial"
+      ],
+      "correct_index": 0,
+      "answer_notes": "El libro entiende por orden uno estricto y total; ≤ incumple que nadie sea menor que sí mismo.",
+      "difficulty_rationale": "Hay que aplicar la propiedad a un caso concreto",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "staple",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-transitividad",
+      "type": "mc",
+      "topic": "Transitividad",
+      "prompt": "Si a < b y b < c, ¿qué exige la transitividad?",
+      "options": [
+        "a < c",
+        "c < a",
+        "a = c",
+        "b < a"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Que a < c: la relación se «encadena».",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-orden-total",
+      "type": "mc",
+      "topic": "Orden total",
+      "prompt": "¿Qué significa que un orden sea total?",
+      "options": [
+        "Que cualesquiera dos elementos están relacionados (uno es menor que el otro)",
+        "Que todos los elementos son iguales",
+        "Que existe un máximo",
+        "Que es transitivo"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Total: cualquier par es comparable. Si no, el orden es parcial.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-orden-diccionario",
+      "type": "mc",
+      "topic": "Orden total",
+      "prompt": "El orden alfabético de las palabras de un diccionario es...",
+      "options": [
+        "total",
+        "parcial, pero no un orden",
+        "parcial",
+        "una relación sin orden"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Dos palabras distintas siempre se pueden comparar alfabéticamente: es un orden total.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-orden-parcial",
+      "type": "mc",
+      "topic": "Orden parcial",
+      "prompt": "¿Qué ejemplo de orden parcial da el libro?",
+      "options": [
+        "«Ser descendiente de» entre las personas de una ciudad",
+        "Las palabras del diccionario",
+        "Los números reales con <",
+        "Las letras del alfabeto"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Dos personas pueden no ser descendientes una de otra, así que no siempre se pueden comparar.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-cota-bota",
+      "type": "mc",
+      "topic": "Cota superior",
+      "prompt": "Con el orden del diccionario, ¿qué es «bota» respecto al conjunto de palabras que empiezan por «a»?",
+      "options": [
+        "Una cota superior: es mayor o igual que todas",
+        "Una cota inferior",
+        "Un elemento del conjunto",
+        "Un conjunto vacío"
+      ],
+      "correct_index": 0,
+      "answer_notes": "«bota» va después de todas las palabras que empiezan por «a», luego es mayor que todas ellas.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-cota-definicion",
+      "type": "flashcard",
+      "topic": "Cota superior",
+      "prompt": "¿Qué es una cota superior de un subconjunto M ⊂ X?",
+      "answer_notes": "Un elemento de X mayor o igual que todos los elementos de M (M no vacío).",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "relaciones",
+          "orden"
+        ]
+      }
+    },
+    {
+      "id": "q-funcion-condicion",
+      "type": "mc",
+      "topic": "Función",
+      "prompt": "¿Qué exige que un subconjunto f ⊂ X × Y sea una función?",
+      "options": [
+        "Que para cada x ∈ X exista un único y ∈ Y con (x, y) ∈ f",
+        "Que para cada y haya un único x",
+        "Que f sea inyectiva",
+        "Que X = Y"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Cada elemento del dominio debe tener exactamente una imagen.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-funcion-formal-vs-regla",
+      "type": "flashcard",
+      "topic": "Función",
+      "prompt": "¿Qué diferencia hay entre la definición formal de función y el uso habitual?",
+      "answer_notes": "Formalmente es un subconjunto de X × Y (su gráfica); después se deja de lado esa formalidad y se trabaja con la idea de regla que asigna a cada x un único y.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "occasional",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-funcion-valor",
+      "type": "mc",
+      "topic": "Función",
+      "prompt": "Si f(x) = (x − 3)² con dominio {2, 3, 4, 5}, ¿cuánto vale f(5)?",
+      "options": [
+        "4",
+        "2",
+        "9",
+        "25"
+      ],
+      "correct_index": 0,
+      "answer_notes": "f(5) = (5 − 3)² = 4.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-funcion-notacion",
+      "type": "flashcard",
+      "topic": "Función",
+      "prompt": "¿Qué notación se usa para el conjunto de todas las aplicaciones de X en Y?",
+      "answer_notes": "Y^X. En el ejemplo f(x) = (x − 3)² sobre I = {2, 3, 4, 5} con valores en ℕ, f ∈ ℕ^I.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "occasional",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-dominio",
+      "type": "flashcard",
+      "topic": "Dominio",
+      "prompt": "En f : X → Y, ¿qué es el dominio?",
+      "answer_notes": "El conjunto X: a cada uno de sus elementos la función le asigna un único elemento de Y.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-imagen-calculo",
+      "type": "mc",
+      "topic": "Imagen",
+      "prompt": "Con f(x) = (x − 3)² sobre {2, 3, 4, 5}, ¿cuánto vale la imagen f({2, 4})?",
+      "options": [
+        "{1}",
+        "{1, 1}",
+        "{2, 4}",
+        "{0, 1}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "f(2) = 1 y f(4) = 1, así que la imagen es el conjunto {1}.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-imagen-definicion",
+      "type": "flashcard",
+      "topic": "Imagen",
+      "prompt": "¿Cómo se define la imagen f(A) de un subconjunto A ⊂ X?",
+      "answer_notes": "f(A) = {y ∈ Y : existe x ∈ A con f(x) = y}.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-recorrido",
+      "type": "mc",
+      "topic": "Recorrido",
+      "prompt": "¿Cuál es el recorrido de f(x) = (x − 3)² sobre {2, 3, 4, 5}?",
+      "options": [
+        "{0, 1, 4}",
+        "{1, 0, 1, 4}",
+        "ℕ",
+        "{2, 3, 4, 5}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "El recorrido es f(X) = {1, 0, 1, 4} sin repetir: {0, 1, 4}.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-inversa-no-funcion",
+      "type": "flashcard",
+      "topic": "Imagen inversa",
+      "prompt": "¿Es f⁻¹ una función en general?",
+      "answer_notes": "No: f⁻¹(B) = {x ∈ X : f(x) ∈ B} puede tener varios elementos, así que en general es una multifunción.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-inversa-calculo",
+      "type": "mc",
+      "topic": "Imagen inversa",
+      "prompt": "Con f(x) = (x − 3)² sobre {2, 3, 4, 5}, ¿cuánto vale f⁻¹({1})?",
+      "options": [
+        "{2, 4}",
+        "{1}",
+        "{2}",
+        "{3}"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Valen 1 los x = 2 y x = 4.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-inyectiva-ejemplo",
+      "type": "mc",
+      "topic": "Inyectividad",
+      "prompt": "¿Es inyectiva f(x) = (x − 3)² sobre {2, 3, 4, 5}?",
+      "options": [
+        "No: f(2) = f(4) = 1",
+        "Sí, porque es un polinomio",
+        "Sí, porque f(3) = 0",
+        "Sí, porque el dominio es finito"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Dos valores distintos (2 y 4) dan la misma imagen, luego f⁻¹({1}) tiene dos elementos y no es una función.",
+      "difficulty_rationale": "Hay que aplicar la definición con un contraejemplo",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "staple",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-inyectiva-definicion",
+      "type": "flashcard",
+      "topic": "Inyectividad",
+      "prompt": "¿Cómo define el libro «inyectiva»?",
+      "answer_notes": "f es inyectiva cuando f⁻¹ : f(X) → X es una función: cada elemento de la imagen proviene de un solo x.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-biyectiva-definicion",
+      "type": "flashcard",
+      "topic": "Biyectividad",
+      "prompt": "¿Cuándo es biyectiva una función?",
+      "answer_notes": "Cuando es inyectiva y además f(X) = Y. Entonces f⁻¹ : Y → X también es biyectiva.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "funciones"
+        ]
+      }
+    },
+    {
+      "id": "q-biyectiva-ejemplo",
+      "type": "mc",
+      "topic": "Biyectividad",
+      "prompt": "La función f : {1, 2, 3} → {a, b, c} con f(1) = a, f(2) = b, f(3) = c, ¿es biyectiva?",
+      "options": [
+        "Sí: es inyectiva y su imagen es todo {a, b, c}",
+        "No: no es inyectiva",
+        "No: su imagen no es todo el conjunto final",
+        "Solo es inyectiva"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Cada elemento tiene una imagen distinta y se alcanzan a, b y c.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "funciones"
+        ]
+      }
+    }
+  ]
+}

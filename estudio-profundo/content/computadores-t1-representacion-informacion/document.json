@@ -1,0 +1,1004 @@
+{
+  "id": "computadores-t1-representacion-informacion",
+  "title": "Computadores · Tema 1 (parte I) · Representación de la información",
+  "source_path": "asignaturas/7103104--fundamentos-de-computadores/apuntes/apuntes_fundamentos de computadores_tema_01_parte 1.pdf",
+  "passages": [
+    {
+      "id": "p-computador-funcion",
+      "heading": "1.1–1.2 Qué es un computador y qué hace",
+      "text_es": "Un computador es una máquina electrónica programable que recibe, almacena y procesa información y proporciona resultados mediante la ejecución de programas. Los de estos apuntes son digitales: representan la información con valores discretos, casi siempre con el sistema binario (0 y 1). Un dato es una representación de información que se puede almacenar y procesar; una instrucción especifica una operación y, si hace falta, los datos sobre los que se aplica; y un programa es una secuencia ordenada de instrucciones para una tarea. La función básica del computador es ejecutar programas: recibe datos de entrada, los procesa bajo el control de un programa y da información de salida. Se describe con cuatro funciones: almacenar datos y programas, procesar datos, transferir información con el entorno y controlar todo ello. Por dentro, instrucciones y datos son secuencias de símbolos binarios.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 13,
+          "entity_id": "computador"
+        },
+        {
+          "start": 291,
+          "end": 295,
+          "entity_id": "dato"
+        },
+        {
+          "start": 372,
+          "end": 383,
+          "entity_id": "instruccion"
+        },
+        {
+          "start": 467,
+          "end": 475,
+          "entity_id": "programa"
+        },
+        {
+          "start": 538,
+          "end": 567,
+          "entity_id": "funcion-computador"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-bit-codigo",
+      "heading": "1.3 Representación de la información",
+      "text_es": "La unidad elemental de información es el bit (binary digit), que vale 0 o 1. Con n bits se forman 2ⁿ combinaciones (con 2 bits, 4; con 3 bits, 8), y cada una puede representar un elemento si se fija su significado. La representación binaria consiste en representar información con secuencias de bits. Según el uso hay dos casos: si los bits son dígitos de un número en base 2, es un sistema de numeración binario; si asignan una representación a los elementos de un conjunto, es un código binario. Por eso 1011 es el número once como número binario, pero puede ser un carácter o una instrucción: el significado depende de cómo se interprete.",
+      "spans": [
+        {
+          "start": 41,
+          "end": 44,
+          "entity_id": "bit"
+        },
+        {
+          "start": 218,
+          "end": 240,
+          "entity_id": "representacion-binaria"
+        },
+        {
+          "start": 383,
+          "end": 412,
+          "entity_id": "sistema-binario"
+        },
+        {
+          "start": 482,
+          "end": 496,
+          "entity_id": "codigo-binario"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-numeracion",
+      "heading": "1.3.1 Sistemas de numeración posicionales",
+      "text_es": "Un sistema de numeración fija unos símbolos (dígitos) y unas reglas para escribir números. Los que se usan aquí son posicionales: el valor de un dígito depende del dígito y de su posición. Cada sistema se caracteriza por su base, que da el número de dígitos distintos. Cada posición tiene un peso, una potencia de la base: b⁰, b¹, b², … a la izquierda del punto y b⁻¹, b⁻², … a la derecha. El valor es la suma de cada dígito por su peso: 325 = 3·10² + 2·10¹ + 5·10⁰. El signo + o − no es un dígito. En binario, de base 2, los dígitos son 0 y 1 y los pesos son potencias de 2: (1011)₂ = 8 + 2 + 1 = (11)₁₀ y (101.101)₂ = (5.625)₁₀. Los ceros a la izquierda no cambian el valor: (0011)₂ = (11)₂ = (3)₁₀.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 24,
+          "entity_id": "sistema-numeracion"
+        },
+        {
+          "start": 116,
+          "end": 128,
+          "entity_id": "sistema-posicional"
+        },
+        {
+          "start": 224,
+          "end": 228,
+          "entity_id": "base"
+        },
+        {
+          "start": 292,
+          "end": 296,
+          "entity_id": "peso"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-conversion",
+      "heading": "1.3.1 Bits significativos y conversión a binario",
+      "text_es": "El bit situado más a la izquierda es el bit más significativo (MSB) y el situado más a la derecha, el bit menos significativo (LSB); en (1011)₂ el MSB pesa 2³ y el LSB 2⁰. De binario a decimal se multiplica cada bit por su peso y se suma. De decimal entero a binario se usan las divisiones sucesivas entre 2: se divide el número y cada cociente entre 2 hasta que el cociente sea 0, y los restos, leídos en orden inverso, son los dígitos: (45)₁₀ = (101101)₂. La parte fraccionaria se convierte con multiplicaciones sucesivas por 2: la parte entera de cada resultado es un dígito y se continúa con la parte fraccionaria: (0.625)₁₀ = (0.101)₂. Un número con parte entera y fraccionaria se convierte por separado: (13.625)₁₀ = (1101.101)₂.",
+      "spans": [
+        {
+          "start": 40,
+          "end": 67,
+          "entity_id": "msb"
+        },
+        {
+          "start": 102,
+          "end": 131,
+          "entity_id": "lsb"
+        },
+        {
+          "start": 279,
+          "end": 307,
+          "entity_id": "divisiones-sucesivas"
+        },
+        {
+          "start": 497,
+          "end": 529,
+          "entity_id": "multiplicaciones-sucesivas"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-infinita",
+      "heading": "1.3.1 Fracciones con representación binaria infinita",
+      "text_es": "Las multiplicaciones sucesivas terminan cuando la parte fraccionaria llega a 0, pero no siempre: (0.1)₁₀ = (0.0001100110011…)₂ tiene infinitos dígitos binarios. Una fracción simplificada tiene representación finita en una base si los factores primos de su denominador son también factores de la base. Como el binario solo tiene el factor 2, una fracción tiene representación binaria finita si, simplificada, su denominador es una potencia de 2: 1/2, 1/4, 3/8 y 5/16 son finitas; 1/3, 1/5 y 1/10 son infinitas. Como el computador tiene un número finito de bits, esos números no se pueden guardar exactamente y se aproximan.",
+      "spans": [
+        {
+          "start": 133,
+          "end": 159,
+          "entity_id": "representacion-infinita"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-codigos",
+      "heading": "1.3.2–1.3.3 Códigos binarios y cuántos bits hacen falta",
+      "text_es": "Un código asigna a cada elemento de un conjunto una palabra código, una secuencia de bits; la asignación puede ser arbitraria, por ejemplo rojo 00, verde 01, azul 10 y amarillo 11. No hay que confundir un número binario con una palabra código: la secuencia 10 es el número 2 como número binario, pero el color azul en ese código. Para codificar N elementos distintos hacen falta n bits con N ≤ 2ⁿ; el mínimo es n = ceil(log₂ N), donde la función techo da el menor entero mayor o igual. Con N = 512 = 2⁹ se necesitan 9 bits y se usan todas las palabras; con N = 33 hacen falta 6 bits (2⁵ = 32 no basta) y de las 64 palabras quedan 31 sin asignar. Conviene conocer las potencias de 2: 2⁶ = 64, 2⁷ = 128, 2⁸ = 256, 2⁹ = 512 y 2¹⁰ = 1 024.",
+      "spans": [
+        {
+          "start": 52,
+          "end": 66,
+          "entity_id": "palabra-codigo"
+        },
+        {
+          "start": 335,
+          "end": 366,
+          "entity_id": "codificacion-n-elementos"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-unidades",
+      "heading": "1.3.4 Unidades de información",
+      "text_es": "La unidad básica es el bit (símbolo b); ocho bits forman un byte (símbolo B), de modo que 1 B = 8 b y un byte tiene 2⁸ = 256 combinaciones. Para cantidades grandes hay dos familias de prefijos: los prefijos decimales (SI), potencias de 10 (k = 10³, M = 10⁶, G = 10⁹, T = 10¹²), y los prefijos binarios (IEEE 1541 e IEC 80000-13), potencias de 2 (Ki = 2¹⁰, Mi = 2²⁰, Gi = 2³⁰, Ti = 2⁴⁰). No son lo mismo: 1 kB = 1 000 B y 1 KiB = 1 024 B; 1 GiB = 1 073 741 824 B. Además 1 MB = 8 Mb, así que hay que distinguir b de B.",
+      "spans": [
+        {
+          "start": 60,
+          "end": 64,
+          "entity_id": "byte"
+        },
+        {
+          "start": 198,
+          "end": 216,
+          "entity_id": "prefijos-decimales"
+        },
+        {
+          "start": 284,
+          "end": 301,
+          "entity_id": "prefijos-binarios"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-bcd",
+      "heading": "1.3.5 Código BCD",
+      "text_es": "El código BCD (Binary Coded Decimal) representa cada dígito decimal de forma independiente con una palabra de 4 bits (3 bits dan solo 8 palabras y hacen falta 10). Hay varios: 8421, 2421 y exceso a 3. El BCD 8421 es ponderado, con pesos 8, 4, 2 y 1: 0101 = 0·8 + 1·4 + 0·2 + 1·1 = 5. Solo usa 10 de las 16 palabras; de 1010 a 1111 no se usan. El 5 se escribe 0101 en 8421, 1011 en 2421 y 1000 en exceso a 3. Un número se codifica dígito a dígito: (59)₁₀ → 0101 1001, que no coincide con su binario (59)₁₀ = (111011)₂. BCD usa más bits (8 frente a 6 en este caso), pero facilita pasar de la representación interna a la decimal; se usa en calculadoras y visualizadores numéricos.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 13,
+          "entity_id": "bcd"
+        },
+        {
+          "start": 204,
+          "end": 212,
+          "entity_id": "bcd-8421"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-hexa-octal",
+      "heading": "1.3.6 Hexadecimal y octal",
+      "text_es": "El sistema hexadecimal es posicional de base 16, con los dígitos 0–9 y A–F (A = 10, B = 11, C = 12, D = 13, E = 14, F = 15). Por ejemplo, (2A7)₁₆ = 2·16² + 10·16¹ + 7·16⁰ = (679)₁₀. De decimal a hexadecimal se usan divisiones sucesivas entre 16: (725)₁₀ = (2D5)₁₆. Como 16 = 2⁴, cada dígito hexadecimal equivale a un grupo de 4 bits y se convierte entre binario y hexadecimal sin pasar por decimal: se agrupan los bits de 4 en 4 desde el punto, completando con ceros a la izquierda. (1011011110)₂ = (0010 1101 1110)₂ = (2DE)₁₆ y (3A7)₁₆ = (0011 1010 0111)₂. Se usa para direcciones de memoria y contenidos de registros. El sistema octal es de base 8 = 2³ y agrupa los bits de 3 en 3: (110101011)₂ = (653)₈ y (527)₈ = (101 010 111)₂; hoy se usa menos.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 22,
+          "entity_id": "hexadecimal"
+        },
+        {
+          "start": 623,
+          "end": 636,
+          "entity_id": "octal"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-sin-signo",
+      "heading": "1.3.7 Enteros sin signo",
+      "text_es": "Con n bits hay 2ⁿ secuencias y, como máximo, 2ⁿ valores. Los enteros sin signo usan todos los bits para el valor binario: 0 ≤ x ≤ 2ⁿ − 1. Con 8 bits, de 0 a 255; con 5 bits, 32 valores de 0 a 31. Para representar varios números con el mismo número de bits hay que usar los que necesite el mayor: 511, 1024 y 256 necesitan 9, 11 y 9 bits, luego hacen falta 11. No es lo mismo que codificar tres elementos, para lo que bastarían 2 bits.",
+      "spans": [
+        {
+          "start": 61,
+          "end": 78,
+          "entity_id": "enteros-sin-signo"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-signo-magnitud",
+      "heading": "1.3.7 Signo y magnitud",
+      "text_es": "En signo y magnitud el bit más significativo es el bit de signo (0 positivo, 1 negativo) y los n − 1 bits restantes son el valor absoluto en binario: con 8 bits, +5 = 0 0000101 y −5 = 1 0000101. El rango es −(2ⁿ⁻¹ − 1) ≤ x ≤ 2ⁿ⁻¹ − 1. Hay dos ceros (+0 y −0), así que con n bits se representan 2ⁿ − 1 valores: con 6 bits, 63 valores de −31 a 31. Para −45 con 8 bits: |−45| = 101101, con 7 bits de magnitud 0101101 y signo 1, es decir 10101101.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 19,
+          "entity_id": "signo-magnitud"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-complemento1",
+      "heading": "1.3.7 Complemento a 1",
+      "text_es": "El complemento a 1 se apoya en el complemento de una secuencia, que cambia cada 0 por 1 y cada 1 por 0. Los positivos se representan directamente en binario y un negativo se obtiene complementando todos los bits del positivo: con 8 bits, +5 = 00000101 y −5 = 11111010. El bit más significativo indica el signo. El rango es −(2ⁿ⁻¹ − 1) ≤ x ≤ 2ⁿ⁻¹ − 1 y, como en signo y magnitud, hay dos ceros (00…0 y 11…1), así que se representan 2ⁿ − 1 valores. Para −37 con 8 bits: +37 = 00100101, complementado 11011010. Para leer un número cuyo bit más significativo es 1 se complementan los bits y se pone signo negativo: 11001011 → 00110100 = 52, luego −52.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 18,
+          "entity_id": "complemento-1"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-suma-binaria",
+      "heading": "1.3.7 Suma binaria y acarreo",
+      "text_es": "La suma binaria sigue las reglas 0 + 0 = 0, 0 + 1 = 1, 1 + 0 = 1 y 1 + 1 = 10: se escribe 0 y se genera un acarreo (carry) de 1 hacia la posición de la izquierda. Con acarreo entrante, 1 + 1 + 1 = 11: se escribe 1 y se genera otro acarreo. Ejemplo: (101101)₂ + (011011)₂ = (1001000)₂, es decir, 45 + 27 = 72. Con un número fijo de bits, un acarreo más allá del bit más significativo es el acarreo de salida (carry out) y queda fuera: con 4 bits, 1101 + 0111 = 10100, y se conservan los 4 bits menos significativos, 0100.",
+      "spans": [
+        {
+          "start": 107,
+          "end": 114,
+          "entity_id": "acarreo"
+        },
+        {
+          "start": 389,
+          "end": 406,
+          "entity_id": "acarreo-salida"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-complemento2",
+      "heading": "1.3.7 Complemento a 2",
+      "text_es": "El complemento a 2 representa los positivos directamente en binario y un negativo se obtiene complementando todos los bits del positivo y sumando 1: con 8 bits, +5 = 00000101 → 11111010 → 11111011, luego −5 = 11111011. El bit más significativo indica el signo. El cero tiene una sola representación (00…0), y 10…0 no es un cero negativo, sino el menor número, −2ⁿ⁻¹. El rango es −2ⁿ⁻¹ ≤ x ≤ 2ⁿ⁻¹ − 1, no simétrico: hay un negativo más que positivos. Con 8 bits, de −128 a 127 (256 valores); con 6 bits, 64 valores de −32 a 31. Para −37 con 8 bits: +37 = 00100101 → 11011010 → 11011011. Para leer un negativo se complementan los bits y se suma 1: 11001100 → 00110011 + 1 = 00110100 = 52, luego −52; 10110100 vale −76. Es el sistema habitual en los computadores porque el cero es único y se puede operar con positivos y negativos usando directamente la suma binaria.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 18,
+          "entity_id": "complemento-2"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-exceso",
+      "heading": "1.3.7 Exceso a M",
+      "text_es": "En exceso a M se fija una constante M (exceso o sesgo, bias) y un entero x se guarda como el binario sin signo de x + M; al revés, si la secuencia vale N como sin signo, el entero es N − M. Con 8 bits y M = 127, el 5 es 5 + 127 = 132 = 10000100 y el −5 es 122 = 01111010; el −45 es 82 = 01010010, y 10110110 = 182 vale 182 − 127 = 55. El rango con n bits es −M ≤ x ≤ 2ⁿ − 1 − M (con 8 bits y M = 127, de −127 a 128). Se usa para los exponentes en coma flotante. No hay que confundirlo con el código BCD exceso a 3, que suma 3 a cada dígito decimal por separado y codifica cada resultado con 4 bits.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 13,
+          "entity_id": "exceso-m"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-coma-fija",
+      "heading": "1.3.8 Coma fija",
+      "text_es": "Para números con parte fraccionaria hay dos formas: la coma fija, donde la posición de la coma se fija de antemano, y la coma flotante. En coma fija con 8 bits, 4 enteros y 4 fraccionarios, la secuencia 10110110 es 1011.0110 = 11 + 3/8 = 11.375, y 9.625 es 1001.1010. La posición de la coma no se almacena: la da el formato. Con f bits fraccionarios, la resolución (diferencia entre dos valores consecutivos) es 2⁻ᶠ, y para no negativos el rango es 0 ≤ x ≤ 2ⁿ⁻ᶠ − 2⁻ᶠ: con 8 bits y f = 4, de 0 a 15.9375 con resolución 0.0625; con f = 3, de 0 a 31.875 con resolución 0.125. Para negativos se usa complemento a 2: se interpreta la secuencia como entero en complemento a 2 y se divide por 2ᶠ; el rango es −2ⁿ⁻ᶠ⁻¹ ≤ x ≤ 2ⁿ⁻ᶠ⁻¹ − 2⁻ᶠ. Con 8 bits y f = 4, de −8 a 7.9375: 11111000 vale −8/16 = −0.5. Con f = 3, −5.25 se obtiene como −5.25·2³ = −42 = 11010110, y 11010100 = −44/8 = −5.5. Hay un compromiso: más bits fraccionarios dan más resolución pero menos rango.",
+      "spans": [
+        {
+          "start": 55,
+          "end": 64,
+          "entity_id": "coma-fija"
+        },
+        {
+          "start": 354,
+          "end": 364,
+          "entity_id": "resolucion"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-coma-flotante",
+      "heading": "1.3.8 Coma flotante",
+      "text_es": "La coma flotante deja que la posición de la coma varíe mediante un exponente, como la notación científica (6250 = 6.25·10³). Un número se expresa con tres componentes: el signo s (0 positivo, 1 negativo), el significando m (también llamado mantisa, con los dígitos significativos) y el exponente e: x = (−1)ˢ·m·2ᵉ. Un mismo número tiene varias formas, por ejemplo (10110.1)₂ = (10.1101)₂·2³ = (1.01101)₂·2⁴; por eso se usa la forma normalizada, con un único bit distinto de cero a la izquierda de la coma (en binario, un 1): x = (−1)ˢ·(1.b₁b₂…bₖ)₂·2ᵉ. Ejemplos: (13.25)₁₀ = (1101.01)₂ = (1.10101)₂·2³; y (−5.375)₁₀ = (−101.011)₂ = (−1)¹·(1.01011)₂·2², con s = 1, m = 1.01011 y e = 2.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 16,
+          "entity_id": "coma-flotante"
+        },
+        {
+          "start": 208,
+          "end": 220,
+          "entity_id": "significando"
+        },
+        {
+          "start": 286,
+          "end": 295,
+          "entity_id": "exponente"
+        },
+        {
+          "start": 426,
+          "end": 443,
+          "entity_id": "forma-normalizada"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-ieee754",
+      "heading": "1.3.8 IEEE 754: precisión simple y doble",
+      "text_es": "El estándar IEEE 754 define los formatos de coma flotante. En precisión simple usa 32 bits: 1 de signo, 8 de exponente y 23 de fracción. Para los números normalizados el primer bit del significando es siempre 1 y no se almacena: es el bit implícito, así que los 23 bits de fracción dan 24 bits significativos. El exponente se guarda en exceso a 127, E = e + 127, y el valor es x = (−1)ˢ·(1.b₂₂…b₀)₂·2ᴱ⁻¹²⁷. Ejemplo: (10110.1)₂ = (1.01101)₂·2⁴ tiene s = 0, E = 4 + 127 = 131 = 10000011 y fracción 01101 seguida de ceros hasta 23 bits: 0 10000011 01101000000000000000000. Para −13.625 = −1101.101 = (−1)¹·(1.101101)₂·2³: s = 1, E = 130 = 10000010 y fracción 10110100000000000000000. En precisión doble se usan 64 bits: 1 de signo, 11 de exponente y 52 de fracción (53 bits significativos); el exponente va en exceso a 1023, E = e + 1023.",
+      "spans": [
+        {
+          "start": 12,
+          "end": 20,
+          "entity_id": "ieee754"
+        },
+        {
+          "start": 62,
+          "end": 78,
+          "entity_id": "precision-simple"
+        },
+        {
+          "start": 235,
+          "end": 248,
+          "entity_id": "bit-implicito"
+        },
+        {
+          "start": 684,
+          "end": 699,
+          "entity_id": "precision-doble"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-especiales",
+      "heading": "1.3.8 Valores especiales de IEEE 754",
+      "text_es": "IEEE 754 reserva combinaciones del exponente (todo 0 o todo 1) para valores especiales. Exponente y fracción a 0 representan el cero, con dos formas, +0 y −0 según el signo, que son iguales al comparar; dividir un positivo finito entre +0 da +∞ y entre −0 da −∞. Exponente a 0 y fracción distinta de 0 es un número subnormal, sin 1 implícito: en precisión simple el menor normalizado positivo es 2⁻¹²⁶ ≈ 1.1755·10⁻³⁸ y el menor subnormal positivo es 2⁻¹⁴⁹ ≈ 1.4013·10⁻⁴⁵, lo que da un subdesbordamiento gradual. Exponente todo 1 y fracción 0 es infinito (+∞ o −∞ según el signo). Exponente todo 1 y fracción distinta de 0 es un NaN (Not a Number), que resulta de operaciones sin valor definido como 0/0, ∞ − ∞, 0·∞ o la raíz cuadrada de un negativo. Hay que recordar que +∞ y −∞ no son números reales.",
+      "spans": [
+        {
+          "start": 128,
+          "end": 132,
+          "entity_id": "cero-ieee"
+        },
+        {
+          "start": 308,
+          "end": 324,
+          "entity_id": "subnormal"
+        },
+        {
+          "start": 545,
+          "end": 553,
+          "entity_id": "infinito"
+        },
+        {
+          "start": 628,
+          "end": 631,
+          "entity_id": "nan"
+        }
+      ],
+      "image_ids": []
+    }
+  ],
+  "entities": [
+    {
+      "id": "computador",
+      "name": "Computador",
+      "level": 1,
+      "description_es": "Máquina electrónica programable que recibe, almacena y procesa información y da resultados ejecutando programas. Los de los apuntes son digitales: usan valores discretos, casi siempre binarios.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "dato",
+      "name": "Dato",
+      "level": 1,
+      "description_es": "Representación de información que se puede almacenar y procesar. Números, caracteres, imágenes o sonidos son, por dentro, secuencias de símbolos binarios.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "instruccion",
+      "name": "Instrucción",
+      "level": 1,
+      "description_es": "Especifica una operación que el computador debe hacer y, si hace falta, los datos sobre los que se aplica. Las operaciones posibles dependen del computador.",
+      "description_spans": [
+        {
+          "start": 76,
+          "end": 81,
+          "entity_id": "dato"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "programa",
+      "name": "Programa",
+      "level": 1,
+      "description_es": "Secuencia ordenada de instrucciones diseñada para una tarea. Su ejecución es obtener las instrucciones y hacer las operaciones que indican.",
+      "description_spans": [
+        {
+          "start": 22,
+          "end": 35,
+          "entity_id": "instruccion"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "funcion-computador",
+      "name": "Función de un computador",
+      "level": 1,
+      "description_es": "Ejecutar programas: con datos de entrada, procesados bajo el control del programa, produce información de salida. Se describe con cuatro funciones: almacenar, procesar, transferir con el entorno y controlar.",
+      "description_spans": [
+        {
+          "start": 9,
+          "end": 18,
+          "entity_id": "programa"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "bit",
+      "name": "Bit",
+      "level": 1,
+      "description_es": "Unidad elemental de información (binary digit); vale 0 o 1. Con n bits hay 2ⁿ combinaciones. Su símbolo como unidad es b.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "representacion-binaria",
+      "name": "Representación binaria",
+      "level": 1,
+      "description_es": "Representar información con secuencias de bits. Puede ser un sistema de numeración o un código binario.",
+      "description_spans": [
+        {
+          "start": 42,
+          "end": 46,
+          "entity_id": "bit"
+        },
+        {
+          "start": 61,
+          "end": 82,
+          "entity_id": "sistema-binario"
+        },
+        {
+          "start": 88,
+          "end": 102,
+          "entity_id": "codigo-binario"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "sistema-binario",
+      "name": "Sistema de numeración binario",
+      "level": 1,
+      "description_es": "Sistema posicional de base 2 con los dígitos 0 y 1; el peso de cada posición es una potencia de 2. (1011)₂ = (11)₁₀.",
+      "description_spans": [
+        {
+          "start": 8,
+          "end": 18,
+          "entity_id": "sistema-posicional"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "entity_id": "base"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "codigo-binario",
+      "name": "Código binario",
+      "level": 1,
+      "description_es": "Asigna a cada elemento de un conjunto una palabra código de bits. La asignación puede ser arbitraria y no tiene por qué ser numérica.",
+      "description_spans": [
+        {
+          "start": 42,
+          "end": 56,
+          "entity_id": "palabra-codigo"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "sistema-numeracion",
+      "name": "Sistema de numeración",
+      "level": 1,
+      "description_es": "Conjunto de símbolos (dígitos) y reglas para escribir números. Los de los apuntes son posicionales.",
+      "description_spans": [
+        {
+          "start": 86,
+          "end": 98,
+          "entity_id": "sistema-posicional"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "sistema-posicional",
+      "name": "Sistema posicional",
+      "level": 1,
+      "description_es": "Sistema de numeración en el que el valor de un dígito depende del dígito y de su posición. Se caracteriza por su base y los pesos son potencias de ella.",
+      "description_spans": [
+        {
+          "start": 113,
+          "end": 117,
+          "entity_id": "base"
+        },
+        {
+          "start": 124,
+          "end": 129,
+          "entity_id": "peso"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "base",
+      "name": "Base de un sistema",
+      "level": 1,
+      "description_es": "Número de dígitos distintos que usa un sistema posicional: 10 en decimal, 2 en binario, 8 en octal, 16 en hexadecimal.",
+      "description_spans": [
+        {
+          "start": 39,
+          "end": 57,
+          "entity_id": "sistema-posicional"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "peso",
+      "name": "Peso de una posición",
+      "level": 1,
+      "description_es": "Potencia de la base asociada a una posición: bᵏ a la izquierda del punto y b⁻ᵏ a la derecha. El valor de un número es la suma de cada dígito por su peso.",
+      "description_spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "entity_id": "base"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "msb",
+      "name": "Bit más significativo (MSB)",
+      "level": 1,
+      "description_es": "El bit situado más a la izquierda de una secuencia: es el de mayor peso. En (1011)₂ pesa 2³.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "lsb",
+      "name": "Bit menos significativo (LSB)",
+      "level": 1,
+      "description_es": "El bit situado más a la derecha: el de menor peso, 2⁰ en un entero.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "divisiones-sucesivas",
+      "name": "Divisiones sucesivas",
+      "level": 2,
+      "description_es": "Método para pasar un entero decimal a otra base: dividir entre la base hasta que el cociente sea 0; los restos, leídos en orden inverso, son los dígitos. (45)₁₀ = (101101)₂.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "multiplicaciones-sucesivas",
+      "name": "Multiplicaciones sucesivas",
+      "level": 2,
+      "description_es": "Método para convertir la parte fraccionaria: multiplicar por 2; la parte entera de cada resultado es un dígito binario, en el mismo orden en que salen. (0.625)₁₀ = (0.101)₂.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "representacion-infinita",
+      "name": "Representación binaria infinita",
+      "level": 2,
+      "description_es": "Fracciones como (0.1)₁₀ no tienen representación binaria finita. Es finita si, simplificada, el denominador es potencia de 2. Un computador solo puede aproximar las infinitas.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "palabra-codigo",
+      "name": "Palabra código",
+      "level": 2,
+      "description_es": "Secuencia de bits que un código asigna a un elemento. La secuencia 10 es el número 2 como número binario, pero puede ser «azul» en un código.",
+      "description_spans": [
+        {
+          "start": 25,
+          "end": 31,
+          "entity_id": "codigo-binario"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "codificacion-n-elementos",
+      "name": "Codificación de N elementos",
+      "level": 2,
+      "description_es": "Para N elementos distintos hacen falta n bits con N ≤ 2ⁿ; mínimo n = ceil(log₂ N). Si N < 2ⁿ quedan palabras sin asignar.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "byte",
+      "name": "Byte",
+      "level": 1,
+      "description_es": "Grupo de 8 bits; símbolo B. 1 B = 8 b y tiene 2⁸ = 256 combinaciones.",
+      "description_spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "entity_id": "bit"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "prefijos-decimales",
+      "name": "Prefijos decimales",
+      "level": 2,
+      "description_es": "k, M, G, T: potencias de 10 (SI). 1 kB = 1 000 B.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "prefijos-binarios",
+      "name": "Prefijos binarios",
+      "level": 2,
+      "description_es": "Ki, Mi, Gi, Ti: potencias de 2 (IEEE 1541, IEC 80000-13). 1 KiB = 1 024 B; 1 GiB = 1 073 741 824 B.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "bcd",
+      "name": "Código BCD",
+      "level": 1,
+      "description_es": "Binary Coded Decimal: cada dígito decimal se codifica por separado con 4 bits. Hay varios códigos (8421, 2421, exceso a 3). No coincide con el binario del número y usa más bits.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "bcd-8421",
+      "name": "BCD 8421",
+      "level": 2,
+      "description_es": "BCD ponderado con pesos 8, 4, 2, 1. Usa 10 de las 16 palabras de 4 bits (0000–1001). 0101 = 5; 59 → 0101 1001.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "hexadecimal",
+      "name": "Sistema hexadecimal",
+      "level": 1,
+      "description_es": "Sistema posicional de base 16 con dígitos 0–9 y A–F. Como 16 = 2⁴, cada dígito equivale a 4 bits, lo que permite convertir con el binario sin pasar por decimal.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "octal",
+      "name": "Sistema octal",
+      "level": 2,
+      "description_es": "Sistema posicional de base 8 = 2³: cada dígito equivale a 3 bits. Se usa menos que el hexadecimal.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "enteros-sin-signo",
+      "name": "Enteros sin signo",
+      "level": 1,
+      "description_es": "Todos los bits expresan el valor en binario: con n bits, 0 ≤ x ≤ 2ⁿ − 1 (2ⁿ valores).",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "signo-magnitud",
+      "name": "Signo y magnitud",
+      "level": 1,
+      "description_es": "El MSB es el signo (0 positivo, 1 negativo) y el resto el valor absoluto. Rango −(2ⁿ⁻¹ − 1) a 2ⁿ⁻¹ − 1; dos ceros, luego 2ⁿ − 1 valores.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "complemento-1",
+      "name": "Complemento a 1",
+      "level": 1,
+      "description_es": "Los negativos se obtienen complementando todos los bits del positivo. Rango −(2ⁿ⁻¹ − 1) a 2ⁿ⁻¹ − 1; dos ceros (00…0 y 11…1), 2ⁿ − 1 valores.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "acarreo",
+      "name": "Acarreo (carry)",
+      "level": 2,
+      "description_es": "Bit que se genera al sumar cuando el resultado de una posición no cabe en un dígito (1 + 1 = 10) y se suma a la posición de la izquierda.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "acarreo-salida",
+      "name": "Acarreo de salida (carry out)",
+      "level": 2,
+      "description_es": "Acarreo que sale por encima del bit más significativo con un número fijo de bits; queda fuera del resultado. Con 4 bits, 1101 + 0111 = 10100 → 0100.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "complemento-2",
+      "name": "Complemento a 2",
+      "level": 1,
+      "description_es": "Los negativos se obtienen complementando los bits del positivo y sumando 1. Un solo cero y rango −2ⁿ⁻¹ a 2ⁿ⁻¹ − 1 (un negativo más). Es el habitual en los computadores porque permite usar la suma binaria con positivos y negativos.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "exceso-m",
+      "name": "Exceso a M",
+      "level": 1,
+      "description_es": "x se guarda como el binario sin signo de x + M (sesgo o bias). Rango −M a 2ⁿ − 1 − M. Se usa para los exponentes en coma flotante.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "coma-fija",
+      "name": "Coma fija",
+      "level": 1,
+      "description_es": "La posición de la coma se fija de antemano por el formato y no se almacena. Resolución 2⁻ᶠ; con complemento a 2, se divide el entero entre 2ᶠ. Compromiso entre rango y resolución.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "resolucion",
+      "name": "Resolución",
+      "level": 2,
+      "description_es": "En coma fija, diferencia entre dos valores consecutivos representables: 2⁻ᶠ con f bits fraccionarios.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "coma-flotante",
+      "name": "Coma flotante",
+      "level": 1,
+      "description_es": "La posición de la coma varía mediante un exponente: x = (−1)ˢ·m·2ᵉ, con signo, significando y exponente. Amplía mucho el rango respecto a la coma fija.",
+      "description_spans": [
+        {
+          "start": 79,
+          "end": 91,
+          "entity_id": "significando"
+        },
+        {
+          "start": 94,
+          "end": 103,
+          "entity_id": "exponente"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "significando",
+      "name": "Significando (mantisa)",
+      "level": 2,
+      "description_es": "Dígitos significativos de un número en coma flotante. Es más preciso que «mantisa», que viene de los logaritmos.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "exponente",
+      "name": "Exponente",
+      "level": 2,
+      "description_es": "Desplaza la coma mediante una potencia de 2 en coma flotante; en IEEE 754 se guarda en exceso.",
+      "description_spans": [
+        {
+          "start": 87,
+          "end": 93,
+          "entity_id": "exceso-m"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "forma-normalizada",
+      "name": "Forma normalizada",
+      "level": 2,
+      "description_es": "Significando con un único bit distinto de cero a la izquierda de la coma, que en binario es 1: (1.b₁b₂…bₖ)₂·2ᵉ. Evita la multiplicidad de representaciones.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "ieee754",
+      "name": "Estándar IEEE 754",
+      "level": 1,
+      "description_es": "Define los formatos de coma flotante (precisión simple y doble), cuántos bits van al signo, exponente y fracción, y valores especiales.",
+      "description_spans": [
+        {
+          "start": 23,
+          "end": 36,
+          "entity_id": "coma-flotante"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "precision-simple",
+      "name": "Precisión simple (IEEE 754)",
+      "level": 1,
+      "description_es": "32 bits: 1 de signo, 8 de exponente (exceso a 127) y 23 de fracción; 24 bits significativos con el bit implícito.",
+      "description_spans": [
+        {
+          "start": 99,
+          "end": 112,
+          "entity_id": "bit-implicito"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "bit-implicito",
+      "name": "Bit implícito",
+      "level": 2,
+      "description_es": "El 1 a la izquierda de la coma de un significando normalizado no se almacena; por eso 23 bits de fracción dan 24 bits significativos.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "precision-doble",
+      "name": "Precisión doble (IEEE 754)",
+      "level": 1,
+      "description_es": "64 bits: 1 de signo, 11 de exponente (exceso a 1023) y 52 de fracción; 53 bits significativos.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "cero-ieee",
+      "name": "Cero en IEEE 754",
+      "level": 2,
+      "description_es": "Exponente y fracción a 0. Hay +0 y −0, que son iguales al comparar; dividir entre ellos da +∞ o −∞.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "subnormal",
+      "name": "Número subnormal",
+      "level": 2,
+      "description_es": "Exponente 0 y fracción distinta de 0; sin 1 implícito. Permite un subdesbordamiento gradual hacia 0. Menor subnormal positivo en simple: 2⁻¹⁴⁹.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "infinito",
+      "name": "Infinito (IEEE 754)",
+      "level": 2,
+      "description_es": "Exponente todo 1 y fracción 0; el signo distingue +∞ y −∞. No son números reales.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "nan",
+      "name": "NaN (Not a Number)",
+      "level": 2,
+      "description_es": "Exponente todo 1 y fracción distinta de 0. Resulta de operaciones sin valor definido: 0/0, ∞ − ∞, 0·∞, raíz de un negativo.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    }
+  ],
+  "images": [],
+  "inconsistencies": []
+}

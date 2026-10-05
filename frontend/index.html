@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNED — cuaderno de estudio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="study.css">
+</head>
+<body>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-mark" aria-hidden="true">
+      <span class="rail-mark-badge">U</span>
+      <span class="rail-mark-text">UNED</span>
+    </div>
+    <nav class="rail-nav">
+      <button class="rail-item active" data-section="inicio" data-icon="house">
+        <span class="rail-item-icon"></span>
+        <span class="rail-item-label">Inicio</span>
+      </button>
+      <button class="rail-item" data-section="documentos" data-icon="folder">
+        <span class="rail-item-icon"></span>
+        <span class="rail-item-label">Documentos</span>
+      </button>
+      <button class="rail-item" data-section="buscar" data-icon="search">
+        <span class="rail-item-icon"></span>
+        <span class="rail-item-label">Buscar</span>
+      </button>
+      <button class="rail-item" data-section="estudiar" data-icon="book-open">
+        <span class="rail-item-icon"></span>
+        <span class="rail-item-label">Estudiar</span>
+      </button>
+      <button class="rail-item" data-section="calendario" data-icon="calendar">
+        <span class="rail-item-icon"></span>
+        <span class="rail-item-label">Calendario</span>
+      </button>
+      <button class="rail-item" data-section="glosario" data-icon="book">
+        <span class="rail-item-icon"></span>
+        <span class="rail-item-label">Glosario</span>
+      </button>
+      <button class="rail-item" data-section="contactos" data-icon="users">
+        <span class="rail-item-icon"></span>
+        <span class="rail-item-label">Contactos</span>
+      </button>
+    </nav>
+    <div class="rail-streak" id="rail-streak"></div>
+  </aside>
+
+  <div class="stage">
+    <header class="topbar">
+      <div class="topbar-row">
+        <h1 class="topbar-title" id="section-title">Inicio</h1>
+        <div class="topbar-actions" id="section-actions"></div>
+      </div>
+      <span class="topbar-context" id="topbar-context"></span>
+    </header>
+
+    <main class="view">
+      <section id="view-inicio" class="pane active">
+        <div id="dash-root"></div>
+        <div class="home-more">
+        <h2 class="pane-heading home-more-heading">Estudio y actividad</h2>
+        <div id="home-greeting"></div>
+        <div id="stat-cards" class="stat-cards"></div>
+        <div id="due-review-card"></div>
+        <div class="home-grid">
+          <div class="home-col home-col-main">
+            <h2 class="pane-heading">Diario</h2>
+            <div class="feed-controls">
+              <select id="filter-type">
+                <option value="">Todo</option>
+                <option value="diario">Diario</option>
+                <option value="noticia">Noticias</option>
+              </select>
+              <button id="refresh-news-btn" class="btn-ghost">Refrescar noticias</button>
+              <span id="feed-status" class="hint"></span>
+            </div>
+            <div id="feed-list"></div>
+          </div>
+          <div class="home-col home-col-side">
+            <h2 class="pane-heading">Accedido recientemente</h2>
+            <div id="recent-list"></div>
+            <div id="recent-pager" class="pager"></div>
+
+            <h2 class="pane-heading">Estudiar a fondo</h2>
+            <div id="home-study-list"></div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="view-documentos" class="pane docs-pane">
+        <aside id="docs-tree"></aside>
+        <div id="docs-viewer">
+          <p class="hint">Selecciona un documento del árbol de la izquierda.</p>
+        </div>
+      </section>
+
+      <section id="view-buscar" class="pane narrow">
+        <form id="rag-form">
+          <span class="rag-search-icon" id="rag-search-icon"></span>
+          <input id="rag-question" type="text" placeholder="¿Qué querías repasar?" autocomplete="off">
+          <button type="submit" class="btn-primary">Preguntar</button>
+        </form>
+        <div id="rag-status" class="hint"></div>
+        <div id="rag-answer"></div>
+      </section>
+
+      <section id="view-estudiar" class="pane">
+        <div id="study-root"></div>
+      </section>
+
+      <section id="view-calendario" class="pane">
+        <div id="calendar-root"></div>
+      </section>
+
+      <section id="view-glosario" class="pane narrow">
+        <div id="glossary-root"></div>
+      </section>
+
+      <section id="view-contactos" class="pane narrow">
+        <div id="contacts-root"></div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<div id="card-stack" class="card-stack" aria-live="polite"></div>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1768 @@
+{
+  "id": "computadores-t1-representacion-informacion",
+  "title": "Computadores · Tema 1 (parte I) · Representación de la información",
+  "track": "computadores-t1-representacion-informacion",
+  "level": 1,
+  "description": "Preguntas y tarjetas sobre el Tema 1 (parte I) de los apuntes de Fundamentos de Computadores.",
+  "questions": [
+    {
+      "id": "q-computador-definicion",
+      "type": "mc",
+      "topic": "Computador",
+      "prompt": "¿Cómo define el libro un computador?",
+      "options": [
+        "Máquina electrónica programable que recibe, almacena y procesa información y da resultados ejecutando programas",
+        "Dispositivo que solo realiza cálculos aritméticos",
+        "Cualquier máquina eléctrica con un motor",
+        "Un programa que gestiona archivos"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Es una máquina electrónica programable; los de los apuntes son digitales (valores discretos).",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "fundamentos"
+        ]
+      }
+    },
+    {
+      "id": "q-dato-instruccion-programa",
+      "type": "flashcard",
+      "topic": "Datos e instrucciones",
+      "prompt": "Distingue dato, instrucción y programa.",
+      "answer_notes": "Dato: información representada que se puede almacenar y procesar. Instrucción: especifica una operación y los datos sobre los que se aplica. Programa: secuencia ordenada de instrucciones para una tarea.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "fundamentos"
+        ]
+      }
+    },
+    {
+      "id": "q-funcion-basica",
+      "type": "mc",
+      "topic": "Función del computador",
+      "prompt": "¿Cuál es la función básica de un computador?",
+      "options": [
+        "Ejecutar programas",
+        "Almacenar archivos",
+        "Conectarse a redes",
+        "Mostrar imágenes"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Procesa información automáticamente ejecutando programas sobre unos datos.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "fundamentos"
+        ]
+      }
+    },
+    {
+      "id": "q-cuatro-funciones",
+      "type": "flashcard",
+      "topic": "Función del computador",
+      "prompt": "¿Cuáles son las cuatro funciones básicas de un computador?",
+      "answer_notes": "Almacenamiento de datos y programas, procesamiento de datos, transferencia de información con el entorno y control de todas estas operaciones.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "fundamentos"
+        ]
+      }
+    },
+    {
+      "id": "q-bit-combinaciones",
+      "type": "mc",
+      "topic": "Bit",
+      "prompt": "Con 3 bits, ¿cuántas combinaciones diferentes pueden formarse?",
+      "options": [
+        "8",
+        "6",
+        "9",
+        "3"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Con n bits hay 2ⁿ combinaciones: 2³ = 8.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-binario-vs-codigo",
+      "type": "mc",
+      "topic": "Sistema binario y código binario",
+      "prompt": "¿Qué diferencia hay entre sistema de numeración binario y código binario?",
+      "options": [
+        "En el sistema los bits son dígitos con pesos de potencias de 2; en el código la secuencia representa el elemento asignado",
+        "Son lo mismo",
+        "El código solo sirve para números",
+        "El sistema binario usa dígitos del 0 al 9"
+      ],
+      "correct_index": 0,
+      "answer_notes": "En un número binario los bits son dígitos con pesos; en un código la secuencia identifica a un elemento y no tiene por qué ser un número.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-1011-significado",
+      "type": "flashcard",
+      "topic": "Representación binaria",
+      "prompt": "¿Por qué 1011 no siempre representa el número once?",
+      "answer_notes": "Porque el significado de una secuencia de bits depende de cómo se interprete: como número binario es once, pero puede ser un carácter, una instrucción u otro elemento según el código.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-pesos-posicional",
+      "type": "mc",
+      "topic": "Sistema posicional",
+      "prompt": "En un sistema posicional de base b, ¿qué son los pesos de las posiciones?",
+      "options": [
+        "Potencias de la base b",
+        "Los propios dígitos",
+        "Siempre potencias de 10",
+        "Múltiplos de b"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Los pesos son b⁰, b¹, b², … a la izquierda del punto y b⁻¹, b⁻², … a la derecha.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-base-significado",
+      "type": "mc",
+      "topic": "Sistema posicional",
+      "prompt": "¿Qué indica la base de un sistema de numeración posicional?",
+      "options": [
+        "El número de dígitos diferentes que utiliza",
+        "El mayor número representable",
+        "El número de bits",
+        "La posición de la coma"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Base 10 usa diez dígitos; base 2, dos; base 16, dieciséis.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-binario-decimal-1011",
+      "type": "mc",
+      "topic": "Sistema binario",
+      "prompt": "¿Qué valor decimal tiene (1011)₂?",
+      "options": [
+        "11",
+        "13",
+        "9",
+        "10"
+      ],
+      "correct_index": 0,
+      "answer_notes": "8 + 0 + 2 + 1 = 11.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-binario-fraccion",
+      "type": "mc",
+      "topic": "Sistema binario",
+      "prompt": "¿Cuál es el valor decimal de (101.101)₂?",
+      "options": [
+        "5.625",
+        "5.5",
+        "5.125",
+        "6.625"
+      ],
+      "correct_index": 0,
+      "answer_notes": "4 + 0 + 1 + 1/2 + 0 + 1/8 = 5.625.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-msb-lsb",
+      "type": "flashcard",
+      "topic": "Bits significativos",
+      "prompt": "¿Qué son el MSB y el LSB y qué pesos tienen en (1011)₂?",
+      "answer_notes": "MSB: bit más a la izquierda (mayor peso, aquí 2³ = 8). LSB: bit más a la derecha (menor peso, aquí 2⁰ = 1).",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-decimal-binario-45",
+      "type": "mc",
+      "topic": "Divisiones sucesivas",
+      "prompt": "¿Cuál es la representación binaria de (45)₁₀?",
+      "options": [
+        "101101",
+        "110101",
+        "101011",
+        "100101"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Restos de dividir entre 2: 1, 0, 1, 1, 0, 1; leídos al revés dan 101101 (32 + 8 + 4 + 1 = 45).",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-fraccion-0625",
+      "type": "mc",
+      "topic": "Multiplicaciones sucesivas",
+      "prompt": "¿Cuál es la representación binaria de (0.625)₁₀?",
+      "options": [
+        "0.101",
+        "0.011",
+        "0.110",
+        "0.1001"
+      ],
+      "correct_index": 0,
+      "answer_notes": "0.625·2 = 1.25 → 1; 0.25·2 = 0.5 → 0; 0.5·2 = 1.0 → 1: 0.101.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-13625-binario",
+      "type": "flashcard",
+      "topic": "Conversión a binario",
+      "prompt": "¿Cómo se convierte (13.625)₁₀ a binario y cuánto es?",
+      "answer_notes": "Se convierten por separado: la parte entera con divisiones sucesivas, (13)₁₀ = (1101)₂, y la fraccionaria con multiplicaciones sucesivas, (0.625)₁₀ = (0.101)₂. Resultado: (1101.101)₂.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-01-binario-infinito",
+      "type": "mc",
+      "topic": "Representación infinita",
+      "prompt": "¿Qué le ocurre a (0.1)₁₀ en binario?",
+      "options": [
+        "Tiene infinitos dígitos: 0.0001100110011…",
+        "Es 0.0001 exacto",
+        "Es 0.1 también en binario",
+        "No se puede convertir nunca"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Las multiplicaciones sucesivas repiten la parte fraccionaria 0.2, así que el proceso no termina.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-fraccion-finita",
+      "type": "mc",
+      "topic": "Representación infinita",
+      "prompt": "¿Cuál de estas fracciones tiene representación binaria finita?",
+      "options": [
+        "1/3",
+        "1/5",
+        "3/8",
+        "1/10"
+      ],
+      "correct_index": 2,
+      "answer_notes": "Una fracción simplificada es finita en binario si su denominador es potencia de 2: 8 = 2³.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-regla-finitud",
+      "type": "flashcard",
+      "topic": "Representación infinita",
+      "prompt": "¿Cuándo tiene una fracción representación finita en una base?",
+      "answer_notes": "Cuando, una vez simplificada, los factores primos de su denominador son también factores de la base. En binario, cuando el denominador es una potencia de 2.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "common",
+        "topics": [
+          "numeración"
+        ]
+      }
+    },
+    {
+      "id": "q-palabra-codigo",
+      "type": "mc",
+      "topic": "Código binario",
+      "prompt": "En el código rojo 00, verde 01, azul 10, amarillo 11, ¿qué representa la palabra 10?",
+      "options": [
+        "El color azul (y como número binario valdría 2)",
+        "El número 10",
+        "El color rojo",
+        "El número 3"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Como palabra código es azul; interpretada como número binario sería el 2.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-formula-n-bits",
+      "type": "flashcard",
+      "topic": "Codificación de N elementos",
+      "prompt": "¿Cuántos bits mínimos hacen falta para codificar N elementos distintos?",
+      "answer_notes": "El menor n con N ≤ 2ⁿ, es decir n = ceil(log₂ N). Si N < 2ⁿ quedan palabras código sin asignar.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-33-elementos",
+      "type": "mc",
+      "topic": "Codificación de N elementos",
+      "prompt": "¿Cuántos bits hacen falta para codificar 33 elementos diferentes?",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "33"
+      ],
+      "correct_index": 0,
+      "answer_notes": "2⁵ = 32 no basta; 2⁶ = 64 sí: ceil(log₂ 33) = 6.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-512-elementos",
+      "type": "mc",
+      "topic": "Codificación de N elementos",
+      "prompt": "¿Cuántos bits hacen falta para codificar 512 elementos?",
+      "options": [
+        "9",
+        "8",
+        "10",
+        "512"
+      ],
+      "correct_index": 0,
+      "answer_notes": "512 = 2⁹, luego 9 bits, y se usan todas las palabras.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-palabras-sin-asignar",
+      "type": "mc",
+      "topic": "Codificación de N elementos",
+      "prompt": "Con 33 elementos y 6 bits, ¿cuántas palabras código quedan sin asignar?",
+      "options": [
+        "31",
+        "33",
+        "0",
+        "64"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Hay 64 palabras y se asignan 33: 64 − 33 = 31.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-kib-vs-kb",
+      "type": "mc",
+      "topic": "Unidades de información",
+      "prompt": "¿Qué relación hay entre 1 kB y 1 KiB?",
+      "options": [
+        "1 kB = 1 000 B y 1 KiB = 1 024 B",
+        "Son idénticos",
+        "1 kB = 1 024 B y 1 KiB = 1 000 B",
+        "1 kB = 8 B"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Los prefijos decimales (k) son potencias de 10 y los binarios (Ki) potencias de 2.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-mb-mb",
+      "type": "mc",
+      "topic": "Unidades de información",
+      "prompt": "¿Cuántos megabits (Mb) son 1 MB?",
+      "options": [
+        "8 Mb",
+        "1 Mb",
+        "1 024 Mb",
+        "0.125 Mb"
+      ],
+      "correct_index": 0,
+      "answer_notes": "1 B = 8 b, luego 1 MB = 8 Mb.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-byte",
+      "type": "flashcard",
+      "topic": "Unidades de información",
+      "prompt": "¿Qué es un byte y cuántas combinaciones tiene?",
+      "answer_notes": "Un grupo de 8 bits (símbolo B): 1 B = 8 b, con 2⁸ = 256 combinaciones.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-prefijos-binarios",
+      "type": "flashcard",
+      "topic": "Unidades de información",
+      "prompt": "Cita los prefijos binarios y su valor.",
+      "answer_notes": "Ki = 2¹⁰, Mi = 2²⁰, Gi = 2³⁰, Ti = 2⁴⁰ (frente a k, M, G, T = 10³, 10⁶, 10⁹, 10¹²).",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-bcd-275",
+      "type": "mc",
+      "topic": "BCD",
+      "prompt": "¿Cómo se codifica (275)₁₀ en BCD 8421?",
+      "options": [
+        "0010 0111 0101",
+        "1000 1001 0011",
+        "0010 0101 0111",
+        "100010011"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Se codifica cada dígito: 2 → 0010, 7 → 0111, 5 → 0101.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-bcd-59",
+      "type": "mc",
+      "topic": "BCD",
+      "prompt": "¿Cómo se representa (59)₁₀ en BCD 8421?",
+      "options": [
+        "0101 1001",
+        "111011",
+        "0110 0101",
+        "1001 0101"
+      ],
+      "correct_index": 0,
+      "answer_notes": "5 → 0101 y 9 → 1001; en binario puro sería 111011.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-bcd-palabras",
+      "type": "mc",
+      "topic": "BCD",
+      "prompt": "¿Cuántas de las 16 palabras de 4 bits usa el BCD 8421?",
+      "options": [
+        "10",
+        "16",
+        "8",
+        "9"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Solo las diez de 0000 a 1001; 1010 a 1111 no se usan.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-bcd-ventaja",
+      "type": "flashcard",
+      "topic": "BCD",
+      "prompt": "¿Qué ventaja y qué inconveniente tiene el BCD frente al binario puro?",
+      "answer_notes": "Ventaja: mantiene la correspondencia directa entre cada dígito decimal y sus bits (fácil de presentar en decimal). Inconveniente: usa más bits (59 necesita 8 bits en BCD y 6 en binario).",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-hex-679",
+      "type": "mc",
+      "topic": "Hexadecimal",
+      "prompt": "¿Qué valor decimal tiene (2A7)₁₆?",
+      "options": [
+        "679",
+        "527",
+        "647",
+        "2 107"
+      ],
+      "correct_index": 0,
+      "answer_notes": "2·256 + 10·16 + 7 = 512 + 160 + 7 = 679.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-hex-725",
+      "type": "mc",
+      "topic": "Hexadecimal",
+      "prompt": "¿Cómo se escribe (725)₁₀ en hexadecimal?",
+      "options": [
+        "2D5",
+        "2C5",
+        "D25",
+        "5D2"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Restos de dividir entre 16: 5, 13 (D), 2; al revés, 2D5.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-bin-hex",
+      "type": "mc",
+      "topic": "Hexadecimal",
+      "prompt": "¿Cuánto es (1011011110)₂ en hexadecimal?",
+      "options": [
+        "2DE",
+        "B7E",
+        "5BE",
+        "2BE"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Se agrupa de 4 en 4 desde la derecha: 0010 1101 1110 = 2 D E.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-hex-bin",
+      "type": "mc",
+      "topic": "Hexadecimal",
+      "prompt": "¿Cuál es la representación binaria de (5D2A)₁₆?",
+      "options": [
+        "0101 1101 0010 1010",
+        "0101 1011 0010 1010",
+        "0101 1101 0010 1001",
+        "0111 1101 0010 1010"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Cada dígito hexadecimal es un grupo de 4 bits: 5 = 0101, D = 1101, 2 = 0010, A = 1010.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-hex-por-que",
+      "type": "flashcard",
+      "topic": "Hexadecimal",
+      "prompt": "¿Por qué se convierte tan fácilmente entre binario y hexadecimal?",
+      "answer_notes": "Porque 16 = 2⁴: cada dígito hexadecimal equivale exactamente a un grupo de 4 bits, así que basta agrupar o sustituir sin pasar por decimal.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-octal",
+      "type": "mc",
+      "topic": "Octal",
+      "prompt": "¿Cuánto es (110101011)₂ en octal?",
+      "options": [
+        "653",
+        "565",
+        "635",
+        "536"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Se agrupan los bits de 3 en 3: 110 101 011 = 6 5 3.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "códigos y unidades"
+        ]
+      }
+    },
+    {
+      "id": "q-sin-signo-rango",
+      "type": "mc",
+      "topic": "Enteros sin signo",
+      "prompt": "Con 8 bits, ¿qué rango de enteros sin signo se puede representar?",
+      "options": [
+        "0 a 255",
+        "−128 a 127",
+        "0 a 256",
+        "1 a 255"
+      ],
+      "correct_index": 0,
+      "answer_notes": "0 ≤ x ≤ 2ⁿ − 1 = 255.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-bits-conjunto",
+      "type": "mc",
+      "topic": "Enteros sin signo",
+      "prompt": "¿Cuántos bits mínimos hacen falta para representar sin signo 511, 1024 y 256 con el mismo número de bits?",
+      "options": [
+        "11",
+        "9",
+        "10",
+        "12"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Hay que usar los bits del mayor: 1024 necesita 11 (2¹⁰ − 1 = 1023 < 1024).",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-sm-rango",
+      "type": "mc",
+      "topic": "Signo y magnitud",
+      "prompt": "Con 6 bits en signo y magnitud, ¿qué valores y cuántos se pueden representar?",
+      "options": [
+        "−31 a 31, 63 valores",
+        "−32 a 31, 64 valores",
+        "−31 a 31, 64 valores",
+        "0 a 63, 64 valores"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Un bit es el signo, quedan 5 de magnitud (hasta 31). Hay dos ceros, así que 64 − 1 = 63 valores.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-sm-menos45",
+      "type": "mc",
+      "topic": "Signo y magnitud",
+      "prompt": "¿Cómo se representa −45 en signo y magnitud con 8 bits?",
+      "options": [
+        "10101101",
+        "11010010",
+        "11010011",
+        "00101101"
+      ],
+      "correct_index": 0,
+      "answer_notes": "|−45| = 101101; con 7 bits de magnitud 0101101; signo 1: 1 0101101.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-sm-leer",
+      "type": "mc",
+      "topic": "Signo y magnitud",
+      "prompt": "¿Qué valor tiene 11001011 en signo y magnitud con 8 bits?",
+      "options": [
+        "−75",
+        "−53",
+        "75",
+        "−203"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Signo 1 (negativo); magnitud 1001011 = 64 + 8 + 2 + 1 = 75.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-sm-dos-ceros",
+      "type": "mc",
+      "topic": "Signo y magnitud",
+      "prompt": "¿Cuántos valores distintos permite n bits en signo y magnitud?",
+      "options": [
+        "2ⁿ − 1",
+        "2ⁿ",
+        "2ⁿ⁻¹",
+        "2ⁿ + 1"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Hay dos representaciones del cero (+0 y −0), así que se pierde una combinación.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca1-menos5",
+      "type": "mc",
+      "topic": "Complemento a 1",
+      "prompt": "¿Cómo se representa −5 en complemento a 1 con 8 bits?",
+      "options": [
+        "11111010",
+        "11111011",
+        "10000101",
+        "00000101"
+      ],
+      "correct_index": 0,
+      "answer_notes": "+5 = 00000101; se complementan todos los bits: 11111010.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca1-menos37",
+      "type": "mc",
+      "topic": "Complemento a 1",
+      "prompt": "¿Cómo se representa −37 en complemento a 1 con 8 bits?",
+      "options": [
+        "11011010",
+        "11011011",
+        "10100101",
+        "00100101"
+      ],
+      "correct_index": 0,
+      "answer_notes": "+37 = 00100101; complementado: 11011010.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca1-leer",
+      "type": "mc",
+      "topic": "Complemento a 1",
+      "prompt": "¿Qué valor tiene 11001011 en complemento a 1 con 8 bits?",
+      "options": [
+        "−52",
+        "−53",
+        "−75",
+        "203"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Bit más significativo 1: se complementa (00110100 = 52) y se asigna signo negativo.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-suma-binaria",
+      "type": "mc",
+      "topic": "Suma binaria",
+      "prompt": "¿Cuánto es (101101)₂ + (011011)₂?",
+      "options": [
+        "1001000",
+        "1000100",
+        "110000",
+        "1010100"
+      ],
+      "correct_index": 0,
+      "answer_notes": "45 + 27 = 72 = (1001000)₂.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-suma-111",
+      "type": "mc",
+      "topic": "Suma binaria",
+      "prompt": "En binario, ¿cuánto es 1 + 1 + 1?",
+      "options": [
+        "11 (se escribe 1 y se genera un acarreo)",
+        "10",
+        "111",
+        "3 con acarreo 0"
+      ],
+      "correct_index": 0,
+      "answer_notes": "1 + 1 + 1 = 3 = (11)₂: se escribe 1 y hay acarreo de 1.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-acarreo-salida",
+      "type": "flashcard",
+      "topic": "Acarreo de salida",
+      "prompt": "¿Qué pasa con el acarreo de salida al sumar con un número fijo de bits? Ejemplo con 4 bits: 1101 + 0111.",
+      "answer_notes": "Queda fuera de la representación y se conservan los bits menos significativos. 1101 + 0111 = 10100 → con 4 bits, 0100.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca2-menos5",
+      "type": "mc",
+      "topic": "Complemento a 2",
+      "prompt": "¿Cómo se representa −5 en complemento a 2 con 8 bits?",
+      "options": [
+        "11111011",
+        "11111010",
+        "10000101",
+        "10000100"
+      ],
+      "correct_index": 0,
+      "answer_notes": "+5 = 00000101 → complementado 11111010 → +1 = 11111011.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca2-rango8",
+      "type": "mc",
+      "topic": "Complemento a 2",
+      "prompt": "¿Qué rango tiene el complemento a 2 con 8 bits?",
+      "options": [
+        "−128 a 127",
+        "−127 a 127",
+        "−128 a 128",
+        "0 a 255"
+      ],
+      "correct_index": 0,
+      "answer_notes": "−2ⁿ⁻¹ ≤ x ≤ 2ⁿ⁻¹ − 1: hay un negativo más que positivos.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca2-6bits",
+      "type": "mc",
+      "topic": "Complemento a 2",
+      "prompt": "Con 6 bits en complemento a 2, ¿qué valores y cuántos se pueden representar?",
+      "options": [
+        "−32 a 31, 64 valores",
+        "−31 a 31, 63 valores",
+        "−32 a 32, 65 valores",
+        "−31 a 32, 64 valores"
+      ],
+      "correct_index": 0,
+      "answer_notes": "El cero es único, así que las 64 secuencias son 64 valores distintos.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca2-menos37",
+      "type": "mc",
+      "topic": "Complemento a 2",
+      "prompt": "¿Cómo se representa −37 en complemento a 2 con 8 bits?",
+      "options": [
+        "11011011",
+        "11011010",
+        "10100101",
+        "00100101"
+      ],
+      "correct_index": 0,
+      "answer_notes": "+37 = 00100101 → 11011010 → +1 = 11011011.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca2-leer76",
+      "type": "mc",
+      "topic": "Complemento a 2",
+      "prompt": "¿Qué valor tiene 10110100 en complemento a 2 con 8 bits?",
+      "options": [
+        "−76",
+        "−75",
+        "−52",
+        "180"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Se complementa (01001011) y se suma 1 (01001100 = 76): −76.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca2-leer52",
+      "type": "mc",
+      "topic": "Complemento a 2",
+      "prompt": "¿Qué valor tiene 11001100 en complemento a 2 con 8 bits?",
+      "options": [
+        "−52",
+        "−51",
+        "−76",
+        "204"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Complementado 00110011, más 1 es 00110100 = 52: −52.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca2-1000",
+      "type": "mc",
+      "topic": "Complemento a 2",
+      "prompt": "En complemento a 2 con n bits, ¿qué representa 100…0?",
+      "options": [
+        "El menor número, −2ⁿ⁻¹",
+        "Un cero negativo",
+        "El mayor positivo",
+        "Un error"
+      ],
+      "correct_index": 0,
+      "answer_notes": "No es un cero negativo: en complemento a 2 el cero es único y 10…0 es el menor número representable.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-ca2-por-que",
+      "type": "flashcard",
+      "topic": "Complemento a 2",
+      "prompt": "¿Por qué es el complemento a 2 el sistema habitual para enteros con signo?",
+      "answer_notes": "Porque el cero tiene una única representación y las operaciones con positivos y negativos pueden hacerse directamente con la suma binaria.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-exceso-5",
+      "type": "mc",
+      "topic": "Exceso a M",
+      "prompt": "En exceso a 127 con 8 bits, ¿cómo se representa el 5?",
+      "options": [
+        "10000100",
+        "00000101",
+        "01111010",
+        "10000101"
+      ],
+      "correct_index": 0,
+      "answer_notes": "5 + 127 = 132 = 10000100.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-exceso-leer",
+      "type": "mc",
+      "topic": "Exceso a M",
+      "prompt": "En exceso a 127 con 8 bits, ¿qué número representa 10110110?",
+      "options": [
+        "55",
+        "182",
+        "−55",
+        "127"
+      ],
+      "correct_index": 0,
+      "answer_notes": "182 − 127 = 55.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-exceso-rango",
+      "type": "mc",
+      "topic": "Exceso a M",
+      "prompt": "¿Qué rango tiene el exceso a 127 con 8 bits?",
+      "options": [
+        "−127 a 128",
+        "−128 a 127",
+        "0 a 255",
+        "−127 a 127"
+      ],
+      "correct_index": 0,
+      "answer_notes": "−M ≤ x ≤ 2ⁿ − 1 − M = 255 − 127 = 128.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-exceso-vs-bcd",
+      "type": "flashcard",
+      "topic": "Exceso a M",
+      "prompt": "¿En qué se diferencia el exceso a 3 de enteros del código BCD exceso a 3?",
+      "answer_notes": "En el exceso a 3 de enteros se suma 3 al valor completo y se codifica el resultado. En el BCD exceso a 3 se suma 3 a cada dígito decimal por separado y cada resultado se codifica con 4 bits.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "curveball",
+        "topics": [
+          "enteros"
+        ]
+      }
+    },
+    {
+      "id": "q-coma-fija",
+      "type": "flashcard",
+      "topic": "Coma fija",
+      "prompt": "¿Qué es la representación en coma fija y se almacena la posición de la coma?",
+      "answer_notes": "La posición de la coma se establece de antemano y no se almacena: la determina el formato. Una misma secuencia puede valer cosas distintas según dónde esté la coma.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "coma fija"
+        ]
+      }
+    },
+    {
+      "id": "q-cf-valor",
+      "type": "mc",
+      "topic": "Coma fija",
+      "prompt": "Con 8 bits (4 enteros y 4 fraccionarios), ¿qué valor tiene 10110110?",
+      "options": [
+        "11.375",
+        "11.75",
+        "182",
+        "10.375"
+      ],
+      "correct_index": 0,
+      "answer_notes": "1011.0110: 11 + 1/4 + 1/8 = 11.375.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "coma fija"
+        ]
+      }
+    },
+    {
+      "id": "q-cf-resolucion",
+      "type": "mc",
+      "topic": "Coma fija",
+      "prompt": "Con 3 bits fraccionarios, ¿cuál es la resolución?",
+      "options": [
+        "0.125",
+        "0.25",
+        "0.0625",
+        "0.5"
+      ],
+      "correct_index": 0,
+      "answer_notes": "2⁻ᶠ = 2⁻³ = 0.125.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "coma fija"
+        ]
+      }
+    },
+    {
+      "id": "q-cf-rango",
+      "type": "mc",
+      "topic": "Coma fija",
+      "prompt": "Con 8 bits (5 enteros y 3 fraccionarios) para no negativos, ¿cuál es el mayor valor?",
+      "options": [
+        "31.875",
+        "32",
+        "31.75",
+        "255"
+      ],
+      "correct_index": 0,
+      "answer_notes": "2ⁿ⁻ᶠ − 2⁻ᶠ = 32 − 0.125 = 31.875.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "coma fija"
+        ]
+      }
+    },
+    {
+      "id": "q-cf-ca2-leer",
+      "type": "mc",
+      "topic": "Coma fija",
+      "prompt": "En coma fija de 8 bits en complemento a 2 con 3 bits fraccionarios, ¿qué valor tiene 11010100?",
+      "options": [
+        "−5.5",
+        "−5.25",
+        "−44",
+        "5.5"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Como entero en complemento a 2 vale −44; se divide entre 2³ = 8: −5.5.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "common",
+        "topics": [
+          "coma fija"
+        ]
+      }
+    },
+    {
+      "id": "q-cf-ca2-menos525",
+      "type": "mc",
+      "topic": "Coma fija",
+      "prompt": "En el mismo formato (8 bits, complemento a 2, 3 fraccionarios), ¿cómo se representa −5.25?",
+      "options": [
+        "11010110",
+        "11010100",
+        "10101010",
+        "00101010"
+      ],
+      "correct_index": 0,
+      "answer_notes": "−5.25·2³ = −42; en complemento a 2 con 8 bits, −42 = 11010110.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "common",
+        "topics": [
+          "coma fija"
+        ]
+      }
+    },
+    {
+      "id": "q-cf-rango-ca2",
+      "type": "mc",
+      "topic": "Coma fija",
+      "prompt": "Con 10 bits en complemento a 2 y 5 fraccionarios, ¿qué rango y resolución hay?",
+      "options": [
+        "−16 a 15.96875 con resolución 0.03125",
+        "−32 a 31.96875 con resolución 0.03125",
+        "−16 a 16 con resolución 0.0625",
+        "0 a 31.96875 con resolución 0.03125"
+      ],
+      "correct_index": 0,
+      "answer_notes": "−2ⁿ⁻ᶠ⁻¹ = −2⁴ = −16 hasta 2⁴ − 2⁻⁵ = 15.96875; resolución 2⁻⁵ = 0.03125.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "common",
+        "topics": [
+          "coma fija"
+        ]
+      }
+    },
+    {
+      "id": "q-cf-compromiso",
+      "type": "flashcard",
+      "topic": "Coma fija",
+      "prompt": "¿Qué compromiso hay entre rango y resolución en coma fija?",
+      "answer_notes": "Más bits fraccionarios dan menor resolución (valores más próximos) pero reducen el rango; más bits enteros amplían el rango pero separan más los valores representables.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "coma fija"
+        ]
+      }
+    },
+    {
+      "id": "q-cflot-formula",
+      "type": "flashcard",
+      "topic": "Coma flotante",
+      "prompt": "¿Qué tres componentes tiene un número en coma flotante y cuál es su fórmula?",
+      "answer_notes": "Signo s, significando m y exponente e: x = (−1)ˢ·m·2ᵉ. El exponente desplaza la coma, como en la notación científica.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-significando-mantisa",
+      "type": "mc",
+      "topic": "Coma flotante",
+      "prompt": "¿Qué término prefiere el libro para los dígitos significativos de un número en coma flotante?",
+      "options": [
+        "Significando",
+        "Mantisa",
+        "Fracción decimal",
+        "Característica"
+      ],
+      "correct_index": 0,
+      "answer_notes": "«Mantisa» procede de los logaritmos; el término más preciso es significando.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "occasional",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-normalizada",
+      "type": "mc",
+      "topic": "Forma normalizada",
+      "prompt": "¿Cuál de estas expresiones de (10110.1)₂ está normalizada?",
+      "options": [
+        "(1.01101)₂·2⁴",
+        "(10.1101)₂·2³",
+        "(101.101)₂·2²",
+        "(0.101101)₂·2⁵"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Normalizada: un único bit distinto de cero (un 1) a la izquierda de la coma.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-normalizar-11010101",
+      "type": "mc",
+      "topic": "Forma normalizada",
+      "prompt": "¿Cómo se normaliza (11010.101)₂?",
+      "options": [
+        "(1.1010101)₂·2⁴",
+        "(1.1010101)₂·2³",
+        "(1.10101)₂·2⁴",
+        "(1.1010101)₂·2⁵"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Se desplaza la coma 4 posiciones a la izquierda: e = 4, s = 0.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-normalizar-5375",
+      "type": "mc",
+      "topic": "Forma normalizada",
+      "prompt": "¿Cuáles son s, m y e de (−5.375)₁₀ normalizado?",
+      "options": [
+        "s = 1, m = 1.01011, e = 2",
+        "s = 0, m = 1.01011, e = 2",
+        "s = 1, m = 1.01011, e = 3",
+        "s = 1, m = 101.011, e = 0"
+      ],
+      "correct_index": 0,
+      "answer_notes": "−5.375 = −101.011; normalizado (−1)¹·(1.01011)₂·2².",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "common",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-simple",
+      "type": "mc",
+      "topic": "IEEE 754",
+      "prompt": "¿Cómo se reparten los 32 bits del formato de precisión simple?",
+      "options": [
+        "1 de signo, 8 de exponente y 23 de fracción",
+        "1, 11 y 20",
+        "1, 7 y 24",
+        "2, 8 y 22"
+      ],
+      "correct_index": 0,
+      "answer_notes": "1 + 8 + 23 = 32.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-bit-implicito",
+      "type": "flashcard",
+      "topic": "IEEE 754",
+      "prompt": "¿Qué es el bit implícito y cuántos bits significativos da en precisión simple?",
+      "answer_notes": "El 1 a la izquierda de la coma del significando normalizado no se almacena. Los 23 bits de fracción dan así 24 bits significativos.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-exceso",
+      "type": "mc",
+      "topic": "IEEE 754",
+      "prompt": "¿Qué exceso usa IEEE 754 para el exponente en precisión simple y en doble?",
+      "options": [
+        "127 y 1023",
+        "128 y 1024",
+        "127 y 1024",
+        "255 y 2047"
+      ],
+      "correct_index": 0,
+      "answer_notes": "E = e + 127 en simple y E = e + 1023 en doble.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "staple",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-101101",
+      "type": "mc",
+      "topic": "IEEE 754",
+      "prompt": "¿Cuál es el campo del exponente de (10110.1)₂ en precisión simple?",
+      "options": [
+        "10000011",
+        "10000100",
+        "00000100",
+        "10000010"
+      ],
+      "correct_index": 0,
+      "answer_notes": "(10110.1)₂ = (1.01101)₂·2⁴ → E = 4 + 127 = 131 = 10000011.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "common",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-menos13625",
+      "type": "mc",
+      "topic": "IEEE 754",
+      "prompt": "Para −13.625 en precisión simple, ¿cuáles son el signo y el exponente almacenado?",
+      "options": [
+        "s = 1, E = 130 (10000010)",
+        "s = 0, E = 130",
+        "s = 1, E = 131",
+        "s = 1, E = 3"
+      ],
+      "correct_index": 0,
+      "answer_notes": "−13.625 = (−1)¹·(1.101101)₂·2³ → E = 3 + 127 = 130.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "common",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-doble",
+      "type": "mc",
+      "topic": "IEEE 754",
+      "prompt": "¿Cómo se reparten los 64 bits de la precisión doble y cuántos bits significativos hay?",
+      "options": [
+        "1 de signo, 11 de exponente, 52 de fracción; 53 significativos",
+        "1, 8 y 55; 56",
+        "1, 11 y 52; 52",
+        "1, 10 y 53; 54"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Con el 1 implícito, 52 bits de fracción dan 53 significativos.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-cero",
+      "type": "mc",
+      "topic": "Valores especiales",
+      "prompt": "¿Cómo se representa el cero en IEEE 754?",
+      "options": [
+        "Exponente y fracción a 0; hay +0 y −0",
+        "Solo con todos los bits a 1",
+        "Con exponente 0 y fracción 1",
+        "No se puede representar"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Hay dos ceros según el signo, pero son iguales al comparar.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-subnormal",
+      "type": "mc",
+      "topic": "Valores especiales",
+      "prompt": "¿Cuándo es un número subnormal?",
+      "options": [
+        "Exponente todo 0 y fracción distinta de 0",
+        "Exponente todo 1 y fracción 0",
+        "Exponente todo 1 y fracción distinta de 0",
+        "Exponente y fracción a 0"
+      ],
+      "correct_index": 0,
+      "answer_notes": "No tiene 1 implícito y permite acercarse a 0 gradualmente.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-infinito",
+      "type": "mc",
+      "topic": "Valores especiales",
+      "prompt": "¿Cómo se representa +∞ en IEEE 754?",
+      "options": [
+        "Exponente todo 1, fracción 0 y signo 0",
+        "Exponente todo 0 y fracción todo 1",
+        "Exponente todo 1, fracción distinta de 0",
+        "Con signo 1 y fracción 0"
+      ],
+      "correct_index": 0,
+      "answer_notes": "El signo distingue +∞ y −∞; no son números reales.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "common",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-nan",
+      "type": "mc",
+      "topic": "Valores especiales",
+      "prompt": "¿Cuál de estas operaciones produce NaN?",
+      "options": [
+        "0/0",
+        "1/0",
+        "2 + 2",
+        "5/2"
+      ],
+      "correct_index": 0,
+      "answer_notes": "NaN resulta de operaciones sin valor definido (0/0, ∞ − ∞, 0·∞, raíz de un negativo); 1/0 da +∞.",
+      "difficulty_rationale": "Requiere aplicar la definición a un caso",
+      "tags": {
+        "difficulty": "intermediate",
+        "typicality": "staple",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-ieee-menor-normalizado",
+      "type": "mc",
+      "topic": "Valores especiales",
+      "prompt": "En precisión simple, ¿cuál es el menor número normalizado positivo y el menor subnormal positivo?",
+      "options": [
+        "2⁻¹²⁶ y 2⁻¹⁴⁹",
+        "2⁻¹²⁷ y 2⁻¹⁵⁰",
+        "2⁻¹²⁶ y 2⁻¹²⁷",
+        "2⁻¹²⁸ y 2⁻¹⁴⁹"
+      ],
+      "correct_index": 0,
+      "answer_notes": "Menor normalizado: (1.0…0)₂·2⁻¹²⁶; menor subnormal: 2⁻²³·2⁻¹²⁶ = 2⁻¹⁴⁹.",
+      "difficulty_rationale": "Combina varias definiciones o exige cálculo cuidadoso",
+      "tags": {
+        "difficulty": "advanced",
+        "typicality": "occasional",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    },
+    {
+      "id": "q-infinito-no-real",
+      "type": "flashcard",
+      "topic": "Valores especiales",
+      "prompt": "¿Son +∞ y −∞ números reales?",
+      "answer_notes": "No. En IEEE 754 tienen representaciones especiales que aparecen, por ejemplo, cuando un resultado excede el rango de los números finitos; no deben tratarse como números reales ordinarios.",
+      "difficulty_rationale": "Definición o dato directo del texto",
+      "tags": {
+        "difficulty": "basic",
+        "typicality": "common",
+        "topics": [
+          "coma flotante"
+        ]
+      }
+    }
+  ]
+}

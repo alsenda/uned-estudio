@@ -1,0 +1,695 @@
+{
+  "id": "algebra-t1-conjuntos-tuplas-funciones",
+  "title": "Álgebra · Tema I · Conjuntos, tuplas y funciones (1.1–1.4)",
+  "source_path": "asignaturas/71031027-fundamentos-algebraicos-para-la-ia/apuntes/FUNDAMENTOS ALGEBRAICOS PARA LA IA.pdf",
+  "passages": [
+    {
+      "id": "p-logica-implicacion",
+      "heading": "1.1 Lógica y teoría axiomática de conjuntos",
+      "text_es": "La matemática no se escribe ni se comunica con cadenas de símbolos lógicos: se apoya sobre todo en una teoría de conjuntos ingenua y deja la teoría axiomática como un horizonte teórico. Por eso el libro reduce la lógica a dos símbolos, «⟹» y «⟺», y prefiere el lenguaje natural. Decir P ⟹ Q significa solo que no se cumple «P y no Q» para ningún valor de las variables: no expresa causa ni orden en el tiempo.",
+      "spans": [
+        {
+          "start": 103,
+          "end": 130,
+          "entity_id": "teoria-ingenua"
+        },
+        {
+          "start": 141,
+          "end": 158,
+          "entity_id": "teoria-axiomatica"
+        },
+        {
+          "start": 236,
+          "end": 239,
+          "entity_id": "implicacion"
+        },
+        {
+          "start": 242,
+          "end": 245,
+          "entity_id": "doble-implicacion"
+        },
+        {
+          "start": 285,
+          "end": 290,
+          "entity_id": "implicacion"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-pertenencia",
+      "heading": "1.2 Teoría ingenua de conjuntos: pertenencia",
+      "text_es": "«Conjunto» y «elemento» no se definen. Lo importante es la relación de pertenencia: «b ∈ A» dice que b es un elemento de A y «∉» lo niega. Nunca se dice «a es un elemento», sino «a es un elemento de A». El conjunto vacío ∅ no tiene elementos y es único, porque un conjunto queda determinado por sus elementos.",
+      "spans": [
+        {
+          "start": 59,
+          "end": 82,
+          "entity_id": "pertenencia"
+        },
+        {
+          "start": 206,
+          "end": 220,
+          "entity_id": "conjunto-vacio"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-llaves",
+      "heading": "1.2 Cómo se escribe un conjunto",
+      "text_es": "Las llaves { } determinan conjuntos y no se usan para nada más. Un conjunto se puede dar por extensión, listando sus elementos, o por una condición {x ∈ A : condición}, que obliga a fijar antes el conjunto A. Ejemplos: {x ∈ {a, b, u} : x es vocal} = {a, u} y {n ∈ ℕ : n < 7} = {0, 1, 2, 3, 4, 5, 6}. Ni el orden ni las repeticiones importan: {a, b} = {b, a} y {a, a} = {a}. En cambio {B : B tiene más de un elemento} está mal formado, porque no fija el conjunto del que salen los B.",
+      "spans": [
+        {
+          "start": 89,
+          "end": 102,
+          "entity_id": "por-extension"
+        },
+        {
+          "start": 130,
+          "end": 147,
+          "entity_id": "por-condicion"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-operaciones",
+      "heading": "1.2 Operaciones con conjuntos",
+      "text_es": "La intersección A ∩ B = {x ∈ A : x ∈ B} reúne lo común y cumple A ∩ B = B ∩ A. La unión A ∪ B reúne los x que están en A o en B y necesita un axioma propio. El complementario relativo A \\ B = {x ∈ A : x ∉ B} son los de A que no están en B. Si existe una operación resta, A − B = {a − b : a ∈ A, b ∈ B}, que no se debe confundir con A \\ B: con A = {1, 2, 5} y B = {1, 2}, A \\ B = {5}, mientras que A − B = {0, −1, 1, 4, 3}.",
+      "spans": [
+        {
+          "start": 3,
+          "end": 15,
+          "entity_id": "interseccion"
+        },
+        {
+          "start": 82,
+          "end": 87,
+          "entity_id": "union"
+        },
+        {
+          "start": 160,
+          "end": 183,
+          "entity_id": "complementario-relativo"
+        },
+        {
+          "start": 271,
+          "end": 276,
+          "entity_id": "resta-de-conjuntos"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-subconjuntos",
+      "heading": "1.2 Subconjuntos y conjunto potencia",
+      "text_es": "Se escribe A ⊂ B si todo elemento de A está en B; es lo mismo que A ∩ B = A o A ∪ B = B. El conjunto potencia ℘(X) es el conjunto de todos los subconjuntos de X: ℘({a, b}) = {∅, {a}, {b}, {a, b}}. Hay que separar pertenencia y contención: {a} ⊂ {a, b} y a ∈ {a, b} son ciertas, pero {a} ∈ {a, b} es falsa; en cambio {a} ∈ ℘({a, b}). Para cualquier A se cumple ∅ ⊂ A, A ⊂ A, ∅ ∈ ℘(A) y A ∈ ℘(A).",
+      "spans": [
+        {
+          "start": 11,
+          "end": 16,
+          "entity_id": "subconjunto"
+        },
+        {
+          "start": 92,
+          "end": 109,
+          "entity_id": "conjunto-potencia"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-universo",
+      "heading": "1.2 Los pisos del edificio matemático",
+      "text_es": "La jerarquía A, ℘(A), ℘(℘(A))… es ilimitada. En la práctica se trabaja dentro de un único universo U: los x ∈ U son la planta baja, ℘(U) es el primer piso y ℘(℘(U)) el segundo. Si U = ℝ, un número real a está en la planta baja; un intervalo [a, b] sube al primer piso; y la colección de intervalos que contienen a está en el segundo. Cada piso es un nivel más de empaquetado, no un objeto más grande. La regla implícita es no bajar nunca al sótano y rara vez pasar del tercer piso.",
+      "spans": [
+        {
+          "start": 90,
+          "end": 98,
+          "entity_id": "universo"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-tuplas",
+      "heading": "1.3 Tuplas y producto cartesiano",
+      "text_es": "Como {a, b} = {b, a}, hace falta el par ordenado (a, b) = {{a}, {a, b}}: si a ≠ b, entonces (a, b) ≠ (b, a), y se pueden repetir coordenadas, como en (a, a). El producto cartesiano es A × B = {(a, b) : a ∈ A, b ∈ B}, y A² = A × A; si A tiene n elementos, A² tiene n². Por ejemplo, {a, b} × {a, b, c} tiene 6 pares, ℝ² = {(x, y) : x, y ∈ ℝ} y [1, 5] × [−2, 7) = {(x, y) ∈ ℝ² : 1 ≤ x ≤ 5, −2 ≤ y < 7}. Una n-tupla se define por inducción, (a₁, …, aₙ) = ((a₁, …, aₙ₋₁), aₙ), pero basta recordar que es una ristra de n elementos, posiblemente repetidos, donde importa el orden. Dos tuplas son iguales si y solo si tienen la misma longitud y coinciden componente a componente: (1, 1, 2) ≠ (1, 2, 1) ≠ (1, 2).",
+      "spans": [
+        {
+          "start": 36,
+          "end": 48,
+          "entity_id": "par-ordenado"
+        },
+        {
+          "start": 161,
+          "end": 180,
+          "entity_id": "producto-cartesiano"
+        },
+        {
+          "start": 404,
+          "end": 411,
+          "entity_id": "n-tupla"
+        },
+        {
+          "start": 574,
+          "end": 596,
+          "entity_id": "igualdad-tuplas"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-relaciones-orden",
+      "heading": "1.3 Relaciones y orden",
+      "text_es": "Una relación en X es un subconjunto ℛ ⊂ X × X, y se escribe x₁ ℛ x₂. Las relaciones de orden («<») cumplen dos propiedades: ningún elemento es estrictamente menor que sí mismo y, si a < b y b < c, entonces a < c (transitividad). El orden es total si cualesquiera dos elementos están relacionados, y parcial si no. En este manual «orden» significa estricto y total, salvo aviso. Las palabras del diccionario están totalmente ordenadas; «ser descendiente de» es un orden parcial. Una cota superior de un subconjunto no vacío M es un elemento de X mayor o igual que todos los de M: «bota» lo es del conjunto de las palabras que empiezan por «a».",
+      "spans": [
+        {
+          "start": 4,
+          "end": 12,
+          "entity_id": "relacion"
+        },
+        {
+          "start": 73,
+          "end": 92,
+          "entity_id": "relacion-orden"
+        },
+        {
+          "start": 213,
+          "end": 226,
+          "entity_id": "transitividad"
+        },
+        {
+          "start": 241,
+          "end": 246,
+          "entity_id": "orden-total"
+        },
+        {
+          "start": 299,
+          "end": 306,
+          "entity_id": "orden-parcial"
+        },
+        {
+          "start": 482,
+          "end": 495,
+          "entity_id": "cota-superior"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "p-funciones",
+      "heading": "1.4 Funciones",
+      "text_es": "Una función f : X → Y es un subconjunto de X × Y tal que para cada x ∈ X existe un único y ∈ Y con (x, y) ∈ f, y se escribe y = f(x). Después se trabaja con la idea de regla de asignación. X es el dominio. La imagen de A ⊂ X es f(A) = {y ∈ Y : existe x ∈ A con f(x) = y}, y f(X) es el recorrido. La imagen inversa de B ⊂ Y es f⁻¹(B) = {x ∈ X : f(x) ∈ B}; en general f⁻¹ no es una función. Cuando sí lo es, f es inyectiva; y si además f(X) = Y, es biyectiva. El conjunto de todas las aplicaciones X → Y se escribe Y^X. Ejemplo: f(x) = (x − 3)² en {2, 3, 4, 5} → ℕ da f(2) = 1, f(3) = 0, f(4) = 1 y f(5) = 4, así que f ∈ ℕ^I con I = {2, 3, 4, 5}.",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "entity_id": "funcion"
+        },
+        {
+          "start": 197,
+          "end": 204,
+          "entity_id": "dominio"
+        },
+        {
+          "start": 209,
+          "end": 215,
+          "entity_id": "imagen"
+        },
+        {
+          "start": 285,
+          "end": 294,
+          "entity_id": "recorrido"
+        },
+        {
+          "start": 299,
+          "end": 313,
+          "entity_id": "imagen-inversa"
+        },
+        {
+          "start": 411,
+          "end": 420,
+          "entity_id": "inyectiva"
+        },
+        {
+          "start": 447,
+          "end": 456,
+          "entity_id": "biyectiva"
+        }
+      ],
+      "image_ids": []
+    }
+  ],
+  "entities": [
+    {
+      "id": "teoria-ingenua",
+      "name": "Teoría de conjuntos ingenua",
+      "level": 1,
+      "description_es": "Forma de trabajar con conjuntos usando las ideas y notaciones intuitivas, sin construirlos desde axiomas. Es la que usa el libro; para ampliarla remite a Halmos, «Naive Set Theory».",
+      "description_spans": [
+        {
+          "start": 97,
+          "end": 104,
+          "entity_id": "teoria-axiomatica"
+        }
+      ],
+      "relationships": [],
+      "external_references": [
+        {
+          "label": "Halmos, «Naive Set Theory» (lectura recomendada en el libro)",
+          "url": "https://es.scribd.com/doc/196856585/Halmos-Naive-Set-Theory-pdf"
+        }
+      ],
+      "image_ids": []
+    },
+    {
+      "id": "teoria-axiomatica",
+      "name": "Teoría axiomática de conjuntos",
+      "level": 1,
+      "description_es": "Construcción rigurosa de las matemáticas a partir de axiomas, afirmaciones que se aceptan sin demostrar (por ejemplo, el de la unión y el del conjunto potencia). El libro la deja como horizonte teórico y usa la versión ingenua.",
+      "description_spans": [
+        {
+          "start": 211,
+          "end": 226,
+          "entity_id": "teoria-ingenua"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "implicacion",
+      "name": "Implicación P ⟹ Q",
+      "level": 1,
+      "description_es": "«P ⟹ Q» significa que no se cumple «P y no Q» para ningún valor de las variables. No lleva causa ni secuencia temporal, a diferencia de los ejemplos cotidianos.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "doble-implicacion",
+      "name": "Doble implicación P ⟺ Q",
+      "level": 1,
+      "description_es": "Implicación en los dos sentidos: P ⟹ Q y Q ⟹ P. El libro la usa más por brevedad que por rigor.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "pertenencia",
+      "name": "Relación de pertenencia",
+      "level": 1,
+      "description_es": "Lo único que se asume entre conjuntos. «b ∈ A» dice que b es un elemento de A; «∉» significa «no pertenece» (tachar un símbolo lo niega). Se dice «a es un elemento de A», nunca «a es un elemento».",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "conjunto-vacio",
+      "name": "Conjunto vacío ∅",
+      "level": 1,
+      "description_es": "El conjunto sin elementos. Hay uno solo, porque un conjunto queda determinado por sus elementos. Cumple ∅ ⊂ A y ∅ ∈ ℘(A) para todo conjunto A.",
+      "description_spans": [
+        {
+          "start": 131,
+          "end": 141,
+          "entity_id": "conjunto-potencia"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "por-extension",
+      "name": "Definición por extensión",
+      "level": 1,
+      "description_es": "Dar un conjunto listando sus elementos entre llaves. No importan el orden ni las repeticiones: {a, b} = {b, a} y {a, a} = {a}.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "por-condicion",
+      "name": "Definición por condición",
+      "level": 1,
+      "description_es": "{x ∈ A : condición}: los elementos de A que cumplen la condición. Hay que fijar antes el conjunto A; «{B : B tiene más de un elemento}» está mal formado por no hacerlo.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "interseccion",
+      "name": "Intersección A ∩ B",
+      "level": 1,
+      "description_es": "A ∩ B = {x ∈ A : x ∈ B}: los elementos comunes. Es conmutativa (A ∩ B = B ∩ A) y se usa para caracterizar el subconjunto: A ⊂ B si y solo si A ∩ B = A.",
+      "description_spans": [
+        {
+          "start": 109,
+          "end": 120,
+          "entity_id": "subconjunto"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "union",
+      "name": "Unión A ∪ B",
+      "level": 1,
+      "description_es": "A ∪ B reúne los x que están en A o en B. A diferencia de la intersección, necesita un axioma propio (A ∪ B = ⋃{A, B}). Es lo mismo decir A ⊂ B que A ∪ B = B.",
+      "description_spans": [
+        {
+          "start": 60,
+          "end": 72,
+          "entity_id": "interseccion"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "complementario-relativo",
+      "name": "Complementario relativo A \\ B",
+      "level": 1,
+      "description_es": "A \\ B = {x ∈ A : x ∉ B}: lo que hay en A y no en B. No es lo mismo que la resta A − B.",
+      "description_spans": [
+        {
+          "start": 74,
+          "end": 85,
+          "entity_id": "resta-de-conjuntos"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "resta-de-conjuntos",
+      "name": "Resta de conjuntos A − B",
+      "level": 1,
+      "description_es": "Si hay una operación resta (por ejemplo en ℝ), A − B = {a − b : a ∈ A, b ∈ B}: todas las diferencias. Con A = {1, 2, 5} y B = {1, 2} da {0, −1, 1, 4, 3}, mientras que el complementario A \\ B da {5}.",
+      "description_spans": [
+        {
+          "start": 170,
+          "end": 190,
+          "entity_id": "complementario-relativo"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "subconjunto",
+      "name": "Subconjunto A ⊂ B",
+      "level": 1,
+      "description_es": "A ⊂ B (o A ⊆ B) si todo elemento de A es elemento de B. Equivale a A ∩ B = A y a A ∪ B = B. No se debe confundir con la pertenencia: {a} ⊂ {a, b}, pero {a} ∉ {a, b}.",
+      "description_spans": [
+        {
+          "start": 120,
+          "end": 131,
+          "entity_id": "pertenencia"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "conjunto-potencia",
+      "name": "Conjunto potencia ℘(X)",
+      "level": 1,
+      "description_es": "℘(X) = {A : A ⊂ X}: el conjunto de todos los subconjuntos de X. ℘({a, b}) = {∅, {a}, {b}, {a, b}}. Siempre contiene al vacío y al propio X. Requiere un axioma.",
+      "description_spans": [
+        {
+          "start": 119,
+          "end": 124,
+          "entity_id": "conjunto-vacio"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "universo",
+      "name": "Universo y pisos de abstracción",
+      "level": 1,
+      "description_es": "Conjunto U dentro del cual se trabaja. Los x ∈ U son la planta baja, ℘(U) el primer piso, ℘(℘(U)) el segundo. Cada piso es un nivel más de empaquetado; jamás se baja al sótano y rara vez se pasa del tercer piso.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "par-ordenado",
+      "name": "Par ordenado (a, b)",
+      "level": 1,
+      "description_es": "(a, b) = {{a}, {a, b}}. Hace que (a, b) ≠ (b, a) si a ≠ b, y permite repetir coordenadas, como en (a, a), sin ambigüedad. Hace falta porque un conjunto no recuerda el orden.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "producto-cartesiano",
+      "name": "Producto cartesiano A × B",
+      "level": 1,
+      "description_es": "A × B = {(a, b) : a ∈ A, b ∈ B}, formado por pares ordenados. A² = A × A, y el superíndice aquí es repetición del producto. Tiene |A|·|B| elementos.",
+      "description_spans": [
+        {
+          "start": 45,
+          "end": 60,
+          "entity_id": "par-ordenado"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "n-tupla",
+      "name": "n-tupla",
+      "level": 2,
+      "description_es": "(a₁, …, aₙ) = ((a₁, …, aₙ₋₁), aₙ): ristra de n elementos, posiblemente repetidos, en la que importa el orden. Aⁿ es el conjunto de las n-tuplas con componentes en A.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "igualdad-tuplas",
+      "name": "Igualdad de tuplas",
+      "level": 2,
+      "description_es": "(a₁, …, aₙ) = (b₁, …, bₘ) si y solo si n = m y a₁ = b₁, …, aₙ = bₙ. Por eso (1, 1, 2) ≠ (1, 2, 1) y (0, 0, 0) ≠ (0, 0).",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "relacion",
+      "name": "Relación en un conjunto",
+      "level": 1,
+      "description_es": "Un subconjunto ℛ de X × X; x₁ ℛ x₂ abrevia (x₁, x₂) ∈ ℛ. Las más importantes son las de orden.",
+      "description_spans": [
+        {
+          "start": 85,
+          "end": 93,
+          "entity_id": "relacion-orden"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "relacion-orden",
+      "name": "Relación de orden",
+      "level": 1,
+      "description_es": "Relación «<» con dos propiedades: ningún elemento es estrictamente menor que sí mismo y se cumple la transitividad. Puede ser total o parcial. En el libro «orden» es estricto y total salvo aviso, así que «≤» no es un orden en ese sentido.",
+      "description_spans": [
+        {
+          "start": 101,
+          "end": 114,
+          "entity_id": "transitividad"
+        },
+        {
+          "start": 126,
+          "end": 131,
+          "entity_id": "orden-total"
+        },
+        {
+          "start": 134,
+          "end": 141,
+          "entity_id": "orden-parcial"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "transitividad",
+      "name": "Transitividad",
+      "level": 2,
+      "description_es": "Si a < b y b < c, entonces a < c. Una de las dos propiedades que definen una relación de orden.",
+      "description_spans": [
+        {
+          "start": 77,
+          "end": 94,
+          "entity_id": "relacion-orden"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "orden-total",
+      "name": "Orden total",
+      "level": 2,
+      "description_es": "Orden en el que cualesquiera dos elementos están relacionados (uno es menor que el otro). Ejemplo: las palabras del diccionario con el orden alfabético. Un conjunto está ordenado cuando tiene un orden total.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "orden-parcial",
+      "name": "Orden parcial",
+      "level": 2,
+      "description_es": "Orden en el que puede haber pares de elementos no comparables. Ejemplo: «ser descendiente de» entre las personas de una ciudad.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "cota-superior",
+      "name": "Cota superior",
+      "level": 2,
+      "description_es": "De un subconjunto no vacío M ⊂ X: un elemento de X mayor o igual que todos los de M. Con el orden del diccionario, «bota» es cota superior de las palabras que empiezan por «a». Necesita un orden total para hablar de «mayor».",
+      "description_spans": [
+        {
+          "start": 189,
+          "end": 200,
+          "entity_id": "orden-total"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "funcion",
+      "name": "Función o aplicación",
+      "level": 1,
+      "description_es": "f : X → Y es un subconjunto de X × Y tal que para cada x ∈ X hay un único y ∈ Y con (x, y) ∈ f; se escribe y = f(x). Luego se usa la idea de regla de asignación. El conjunto de todas se escribe Y^X. Tiene dominio, imagen e imagen inversa.",
+      "description_spans": [
+        {
+          "start": 205,
+          "end": 212,
+          "entity_id": "dominio"
+        },
+        {
+          "start": 214,
+          "end": 220,
+          "entity_id": "imagen"
+        },
+        {
+          "start": 223,
+          "end": 237,
+          "entity_id": "imagen-inversa"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "dominio",
+      "name": "Dominio",
+      "level": 2,
+      "description_es": "El conjunto X de una función f : X → Y: aquel cuyos elementos reciben un único elemento de Y.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "imagen",
+      "name": "Imagen de un subconjunto",
+      "level": 2,
+      "description_es": "Para A ⊂ X, f(A) = {y ∈ Y : existe x ∈ A con f(x) = y}. Si A = X se llama recorrido.",
+      "description_spans": [
+        {
+          "start": 74,
+          "end": 83,
+          "entity_id": "recorrido"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "recorrido",
+      "name": "Recorrido",
+      "level": 2,
+      "description_es": "f(X), la imagen de todo el dominio. En f(x) = (x − 3)² sobre {2, 3, 4, 5} es {0, 1, 4}.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "imagen-inversa",
+      "name": "Imagen inversa",
+      "level": 2,
+      "description_es": "Para B ⊂ Y, f⁻¹(B) = {x ∈ X : f(x) ∈ B}. En general no es una función (es una multifunción); cuando lo es, la función es inyectiva.",
+      "description_spans": [
+        {
+          "start": 121,
+          "end": 130,
+          "entity_id": "inyectiva"
+        }
+      ],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "inyectiva",
+      "name": "Función inyectiva",
+      "level": 2,
+      "description_es": "f es inyectiva cuando f⁻¹ : f(X) → X es una función, es decir, cada elemento de la imagen sale de un solo x. f(x) = (x − 3)² sobre {2, 3, 4, 5} no lo es, porque f(2) = f(4) = 1.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    },
+    {
+      "id": "biyectiva",
+      "name": "Función biyectiva",
+      "level": 2,
+      "description_es": "Inyectiva y con f(X) = Y. Entonces f⁻¹ : Y → X también es biyectiva.",
+      "description_spans": [],
+      "relationships": [],
+      "external_references": [],
+      "image_ids": []
+    }
+  ],
+  "images": [],
+  "inconsistencies": []
+}

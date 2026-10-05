@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+chromadb
+ollama
+python-frontmatter
+feedparser
+pyyaml
+pypdf
+pillow
+sqlalchemy
+pydantic
+pydantic-settings
+requests
+fsrs
+fonttools

@@ -1,0 +1,13 @@
+# Fuentes RSS para el feed de noticias.
+#
+# Añade aquí las fuentes relacionadas con tus asignaturas. Cada una:
+#   - name: nombre para mostrar
+#     subject: slug de la asignatura (opcional, debe coincidir con docs/asignaturas/<slug>)
+#     rss_url: URL del feed RSS/Atom
+#
+# Ejemplo (descomenta y ajusta):
+# - name: "Blog de IA de ejemplo"
+#   subject: fundamentos-de-programacion
+#   rss_url: "https://example.com/feed.xml"
+
+[]

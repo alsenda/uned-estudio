@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+backend/data/
+.env
+.DS_Store
+.claude/*.lock
+
+# Progreso de estudio de cada persona (repaso espaciado, resultados de quiz)
+estudio-profundo/backend/estudio.db*
+
+# Datos personales de cada estudiante: no se comparten (las carpetas se crean solas)
+agenda/todos/*
+!agenda/todos/.gitkeep
+contacts/interactions/*
+!contacts/interactions/.gitkeep
+gastos*.xlsx
