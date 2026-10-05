@@ -33,13 +33,22 @@ fin del primer plazo de matrícula el 21-oct; el aviso del curso dice 16-oct. Pe
 Además, al inicio de cada bloque se suben ejercicios y al final ejercicios con perfil de examen. El curso
 tiene un «Cronograma de la asignatura» (plegado en la página de Presentación) que no se ha volcado todavía.
 
+## Novedades del 5-oct (tarde), Tablón de Noticias
+
+- **«Ejercicios Bloque 1»** (Fernando Jiménez, 15:59): sube la lista de **ejercicios resueltos del Bloque 1**,
+  en la pestaña Materiales, dentro del tema «Bloque 1» (recurso «Ejercicios resueltos Bloque 1»).
+- **«Materiales»** (Jiménez, 16:01): la asignatura es de nueva implantación y el libro de texto y los ejercicios
+  se han elaborado a propósito en los últimos meses, así que es probable que haya erratas tipográficas. Piden
+  que se les comuniquen para corregirlas en próximas ediciones.
+
 ## Estructura del curso virtual
 
 Secciones: Presentación, Contenidos (5 temas), Materiales, Evaluación continua, Comunicación,
 Sección de tutoría, Información académica, Envío de calificaciones.
 
 Materiales publicados: texto principal «Fundamentos algebraicos para la IA», texto complementario
-«Álgebra para ingenieros», ejercicios del texto complementario, Guía Python y Curso 0 de matemáticas.
+«Álgebra para ingenieros», ejercicios del texto complementario, Guía Python, Curso 0 de matemáticas y,
+desde el 5-oct, «Ejercicios resueltos Bloque 1» (subsección «Bloque 1»).
 
 Foros: Tablón de Noticias, cuestiones generales, foro de estudiantes (no moderado), dudas de los
 temas 1 a 5, Foro PEC y foro de la Práctica.

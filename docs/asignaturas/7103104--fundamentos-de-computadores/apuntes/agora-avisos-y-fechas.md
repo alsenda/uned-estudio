@@ -14,13 +14,18 @@ Fuente: Agora (curso 19531) y Akademos Web, consultados el 2026-10-05.
   no basta el resultado. Sin material de consulta; solo calculadora no programable.
 - El aviso adjunta `FC_información_básica.pdf` (resumen de lo anterior).
 
+## Aviso «Tareas semana 1 de estudio (5 - 11 de octubre)» (prof. José Manuel Díaz Martínez, 5-oct-2026)
+
+Tarea mínima recomendada para la primera semana: **estudiar la parte I de los apuntes del Tema 1**. Firma el
+equipo docente de Fundamentos de Computadores.
+
 ## Estructura del curso virtual
 
 Secciones: Inicio, Avisos, Materiales (Apuntes Tema 1, parte I, por ahora), Foros, Tareas (PED),
 Sección de tutoría, Información académica, Envío de calificaciones.
 
 Foros: Tablón de avisos, Dudas generales, Dudas PED, y un foro de dudas por tema (publicados por
-ahora los de los temas 1, 2 y 3).
+ahora los de los temas 1, 2 y 3). A 5-oct, Dudas generales y Dudas PED no tienen ningún mensaje.
 
 ## Tutorías (Centro Asociado de Cádiz)
 

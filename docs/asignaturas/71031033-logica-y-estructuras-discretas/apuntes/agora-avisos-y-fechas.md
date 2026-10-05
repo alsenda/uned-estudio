@@ -34,9 +34,11 @@ cada bloque. Sección «Ejemplos de exámenes resueltos» aún no disponible.
 ## Foros (estado a 5-oct)
 
 - Avisos del equipo docente: «Bienvenida al curso» (Jorge Pérez Martín, 1-oct).
-- Dudas generales: hilo «ERRATAS TEXTO» (alumnos reportan erratas del libro web, p. ej. ejemplos de las
-  definiciones 8 y 9 del lenguaje proposicional; el profesor pide incluir la URL de la errata), consulta sobre
-  las prácticas aplicadas y sobre la fecha de la sesión de bienvenida.
+- Dudas generales: hilo «ERRATAS TEXTO» (6 mensajes a 5-oct 14:16: alumnos reportan erratas del libro web,
+  p. ej. ejemplos de las definiciones 8 y 9 del lenguaje proposicional y, la última, paréntesis que faltan en el
+  ejemplo y en la Figura 1 de «Análisis sintáctico de fórmulas proposicionales»; el profesor pide incluir la URL
+  de la errata y aclara que solo hay un libro, al que a veces llaman «libro web»), consulta sobre las prácticas
+  aplicadas y sobre la fecha de la sesión de bienvenida.
 - Otros: Juegos y aplicaciones; foro de estudiantes (no moderado).
 
 ## Tutorías (Centro Asociado de Cádiz)
