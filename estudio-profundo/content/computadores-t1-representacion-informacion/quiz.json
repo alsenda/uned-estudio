@@ -25,6 +25,10 @@
         "topics": [
           "fundamentos"
         ]
+      },
+      "source": {
+        "passage_id": "p-computador-funcion",
+        "entity_id": "computador"
       }
     },
     {
@@ -40,6 +44,10 @@
         "topics": [
           "fundamentos"
         ]
+      },
+      "source": {
+        "passage_id": "p-computador-funcion",
+        "entity_id": "dato"
       }
     },
     {
@@ -62,6 +70,10 @@
         "topics": [
           "fundamentos"
         ]
+      },
+      "source": {
+        "passage_id": "p-computador-funcion",
+        "entity_id": "funcion-computador"
       }
     },
     {
@@ -77,6 +89,10 @@
         "topics": [
           "fundamentos"
         ]
+      },
+      "source": {
+        "passage_id": "p-computador-funcion",
+        "entity_id": "funcion-computador"
       }
     },
     {
@@ -99,6 +115,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-bit-codigo",
+        "entity_id": "bit"
       }
     },
     {
@@ -121,6 +141,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-bit-codigo",
+        "entity_id": "codigo-binario"
       }
     },
     {
@@ -136,6 +160,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-bit-codigo",
+        "entity_id": "representacion-binaria"
       }
     },
     {
@@ -158,6 +186,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-numeracion",
+        "entity_id": "peso"
       }
     },
     {
@@ -180,6 +212,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-numeracion",
+        "entity_id": "base"
       }
     },
     {
@@ -202,6 +238,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-numeracion",
+        "entity_id": "sistema-binario"
       }
     },
     {
@@ -224,6 +264,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-numeracion",
+        "entity_id": "sistema-binario"
       }
     },
     {
@@ -239,6 +283,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-conversion",
+        "entity_id": "msb"
       }
     },
     {
@@ -261,6 +309,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-conversion",
+        "entity_id": "divisiones-sucesivas"
       }
     },
     {
@@ -283,6 +335,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-conversion",
+        "entity_id": "multiplicaciones-sucesivas"
       }
     },
     {
@@ -298,6 +354,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-conversion",
+        "entity_id": "multiplicaciones-sucesivas"
       }
     },
     {
@@ -320,6 +380,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-infinita",
+        "entity_id": "representacion-infinita"
       }
     },
     {
@@ -342,6 +406,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-infinita",
+        "entity_id": "representacion-infinita"
       }
     },
     {
@@ -357,6 +425,10 @@
         "topics": [
           "numeración"
         ]
+      },
+      "source": {
+        "passage_id": "p-infinita",
+        "entity_id": "representacion-infinita"
       }
     },
     {
@@ -379,6 +451,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-codigos",
+        "entity_id": "palabra-codigo"
       }
     },
     {
@@ -394,6 +470,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-codigos",
+        "entity_id": "codificacion-n-elementos"
       }
     },
     {
@@ -416,6 +496,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-codigos",
+        "entity_id": "codificacion-n-elementos"
       }
     },
     {
@@ -438,6 +522,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-codigos",
+        "entity_id": "codificacion-n-elementos"
       }
     },
     {
@@ -460,6 +548,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-codigos",
+        "entity_id": "codificacion-n-elementos"
       }
     },
     {
@@ -482,6 +574,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-unidades",
+        "entity_id": "prefijos-binarios"
       }
     },
     {
@@ -504,6 +600,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-unidades",
+        "entity_id": "byte"
       }
     },
     {
@@ -519,6 +619,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-unidades",
+        "entity_id": "byte"
       }
     },
     {
@@ -534,6 +638,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-unidades",
+        "entity_id": "prefijos-binarios"
       }
     },
     {
@@ -556,6 +664,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-bcd",
+        "entity_id": "bcd-8421"
       }
     },
     {
@@ -578,6 +690,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-bcd",
+        "entity_id": "bcd-8421"
       }
     },
     {
@@ -600,6 +716,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-bcd",
+        "entity_id": "bcd-8421"
       }
     },
     {
@@ -615,6 +735,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-bcd",
+        "entity_id": "bcd"
       }
     },
     {
@@ -637,6 +761,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-hexa-octal",
+        "entity_id": "hexadecimal"
       }
     },
     {
@@ -659,6 +787,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-hexa-octal",
+        "entity_id": "hexadecimal"
       }
     },
     {
@@ -681,6 +813,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-hexa-octal",
+        "entity_id": "hexadecimal"
       }
     },
     {
@@ -703,6 +839,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-hexa-octal",
+        "entity_id": "hexadecimal"
       }
     },
     {
@@ -718,6 +858,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-hexa-octal",
+        "entity_id": "hexadecimal"
       }
     },
     {
@@ -740,6 +884,10 @@
         "topics": [
           "códigos y unidades"
         ]
+      },
+      "source": {
+        "passage_id": "p-hexa-octal",
+        "entity_id": "octal"
       }
     },
     {
@@ -762,6 +910,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-sin-signo",
+        "entity_id": "enteros-sin-signo"
       }
     },
     {
@@ -784,6 +936,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-sin-signo",
+        "entity_id": "enteros-sin-signo"
       }
     },
     {
@@ -806,6 +962,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-signo-magnitud",
+        "entity_id": "signo-magnitud"
       }
     },
     {
@@ -828,6 +988,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-signo-magnitud",
+        "entity_id": "signo-magnitud"
       }
     },
     {
@@ -850,6 +1014,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-signo-magnitud",
+        "entity_id": "signo-magnitud"
       }
     },
     {
@@ -872,6 +1040,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-signo-magnitud",
+        "entity_id": "signo-magnitud"
       }
     },
     {
@@ -894,6 +1066,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento1",
+        "entity_id": "complemento-1"
       }
     },
     {
@@ -916,6 +1092,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento1",
+        "entity_id": "complemento-1"
       }
     },
     {
@@ -938,6 +1118,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento1",
+        "entity_id": "complemento-1"
       }
     },
     {
@@ -960,6 +1144,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-suma-binaria",
+        "entity_id": "acarreo"
       }
     },
     {
@@ -982,6 +1170,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-suma-binaria",
+        "entity_id": "acarreo"
       }
     },
     {
@@ -997,6 +1189,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-suma-binaria",
+        "entity_id": "acarreo-salida"
       }
     },
     {
@@ -1019,6 +1215,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento2",
+        "entity_id": "complemento-2"
       }
     },
     {
@@ -1041,6 +1241,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento2",
+        "entity_id": "complemento-2"
       }
     },
     {
@@ -1063,6 +1267,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento2",
+        "entity_id": "complemento-2"
       }
     },
     {
@@ -1085,6 +1293,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento2",
+        "entity_id": "complemento-2"
       }
     },
     {
@@ -1107,6 +1319,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento2",
+        "entity_id": "complemento-2"
       }
     },
     {
@@ -1129,6 +1345,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento2",
+        "entity_id": "complemento-2"
       }
     },
     {
@@ -1151,6 +1371,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento2",
+        "entity_id": "complemento-2"
       }
     },
     {
@@ -1166,6 +1390,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-complemento2",
+        "entity_id": "complemento-2"
       }
     },
     {
@@ -1188,6 +1416,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-exceso",
+        "entity_id": "exceso-m"
       }
     },
     {
@@ -1210,6 +1442,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-exceso",
+        "entity_id": "exceso-m"
       }
     },
     {
@@ -1232,6 +1468,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-exceso",
+        "entity_id": "exceso-m"
       }
     },
     {
@@ -1247,6 +1487,10 @@
         "topics": [
           "enteros"
         ]
+      },
+      "source": {
+        "passage_id": "p-exceso",
+        "entity_id": "exceso-m"
       }
     },
     {
@@ -1262,6 +1506,10 @@
         "topics": [
           "coma fija"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-fija",
+        "entity_id": "coma-fija"
       }
     },
     {
@@ -1284,6 +1532,10 @@
         "topics": [
           "coma fija"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-fija",
+        "entity_id": "coma-fija"
       }
     },
     {
@@ -1306,6 +1558,10 @@
         "topics": [
           "coma fija"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-fija",
+        "entity_id": "resolucion"
       }
     },
     {
@@ -1328,6 +1584,10 @@
         "topics": [
           "coma fija"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-fija",
+        "entity_id": "coma-fija"
       }
     },
     {
@@ -1350,6 +1610,10 @@
         "topics": [
           "coma fija"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-fija",
+        "entity_id": "coma-fija"
       }
     },
     {
@@ -1372,6 +1636,10 @@
         "topics": [
           "coma fija"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-fija",
+        "entity_id": "coma-fija"
       }
     },
     {
@@ -1394,6 +1662,10 @@
         "topics": [
           "coma fija"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-fija",
+        "entity_id": "coma-fija"
       }
     },
     {
@@ -1409,6 +1681,10 @@
         "topics": [
           "coma fija"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-fija",
+        "entity_id": "coma-fija"
       }
     },
     {
@@ -1424,6 +1700,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-flotante",
+        "entity_id": "coma-flotante"
       }
     },
     {
@@ -1446,6 +1726,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-flotante",
+        "entity_id": "significando"
       }
     },
     {
@@ -1468,6 +1752,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-flotante",
+        "entity_id": "forma-normalizada"
       }
     },
     {
@@ -1490,6 +1778,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-flotante",
+        "entity_id": "forma-normalizada"
       }
     },
     {
@@ -1512,6 +1804,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-coma-flotante",
+        "entity_id": "forma-normalizada"
       }
     },
     {
@@ -1534,6 +1830,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-ieee754",
+        "entity_id": "precision-simple"
       }
     },
     {
@@ -1549,6 +1849,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-ieee754",
+        "entity_id": "bit-implicito"
       }
     },
     {
@@ -1571,6 +1875,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-ieee754",
+        "entity_id": "ieee754"
       }
     },
     {
@@ -1593,6 +1901,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-ieee754",
+        "entity_id": "precision-simple"
       }
     },
     {
@@ -1615,6 +1927,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-ieee754",
+        "entity_id": "precision-simple"
       }
     },
     {
@@ -1637,6 +1953,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-ieee754",
+        "entity_id": "precision-doble"
       }
     },
     {
@@ -1659,6 +1979,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-especiales",
+        "entity_id": "cero-ieee"
       }
     },
     {
@@ -1681,6 +2005,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-especiales",
+        "entity_id": "subnormal"
       }
     },
     {
@@ -1703,6 +2031,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-especiales",
+        "entity_id": "infinito"
       }
     },
     {
@@ -1725,6 +2057,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-especiales",
+        "entity_id": "nan"
       }
     },
     {
@@ -1747,6 +2083,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-especiales",
+        "entity_id": "subnormal"
       }
     },
     {
@@ -1762,6 +2102,10 @@
         "topics": [
           "coma flotante"
         ]
+      },
+      "source": {
+        "passage_id": "p-especiales",
+        "entity_id": "infinito"
       }
     }
   ]

@@ -370,7 +370,7 @@
     {
       "id": "p-especiales",
       "heading": "1.3.8 Valores especiales de IEEE 754",
-      "text_es": "IEEE 754 reserva combinaciones del exponente (todo 0 o todo 1) para valores especiales. Exponente y fracción a 0 representan el cero, con dos formas, +0 y −0 según el signo, que son iguales al comparar; dividir un positivo finito entre +0 da +∞ y entre −0 da −∞. Exponente a 0 y fracción distinta de 0 es un número subnormal, sin 1 implícito: en precisión simple el menor normalizado positivo es 2⁻¹²⁶ ≈ 1.1755·10⁻³⁸ y el menor subnormal positivo es 2⁻¹⁴⁹ ≈ 1.4013·10⁻⁴⁵, lo que da un subdesbordamiento gradual. Exponente todo 1 y fracción 0 es infinito (+∞ o −∞ según el signo). Exponente todo 1 y fracción distinta de 0 es un NaN (Not a Number), que resulta de operaciones sin valor definido como 0/0, ∞ − ∞, 0·∞ o la raíz cuadrada de un negativo. Hay que recordar que +∞ y −∞ no son números reales.",
+      "text_es": "IEEE 754 reserva combinaciones del exponente (todo 0 o todo 1) para valores especiales. Exponente y fracción a 0 representan el cero, con dos formas, +0 y −0 según el signo, que son iguales al comparar; dividir un positivo finito entre +0 da +∞ y entre −0 da −∞. Exponente a 0 y fracción distinta de 0 es un número subnormal, sin 1 implícito: en precisión simple el menor normalizado positivo es 2⁻¹²⁶ ≈ 1.1755·10⁻³⁸ y el menor subnormal positivo es 2⁻¹⁴⁹ ≈ 1.4013·10⁻⁴⁵, lo que da un subdesbordamiento gradual. Exponente todo 1 y fracción 0 es infinito (+∞ o −∞ según el signo). Exponente todo 1 y fracción distinta de 0 es un NaN (Not a Number), que resulta de operaciones sin valor definido como 0/0, ∞ − ∞, 0·∞ o la raíz cuadrada de un negativo. Hay que recordar que +∞ y −∞ no son números reales. En IEEE 754 se les asignan representaciones especiales que pueden aparecer, por ejemplo, cuando el resultado de una operación excede el rango de los números finitos representables.",
       "spans": [
         {
           "start": 128,
@@ -982,7 +982,7 @@
       "id": "infinito",
       "name": "Infinito (IEEE 754)",
       "level": 2,
-      "description_es": "Exponente todo 1 y fracción 0; el signo distingue +∞ y −∞. No son números reales.",
+      "description_es": "Exponente todo 1 y fracción 0; el signo distingue +∞ y −∞. No son números reales. Puede aparecer, por ejemplo, cuando el resultado de una operación excede el rango de los números finitos representables.",
       "description_spans": [],
       "relationships": [],
       "external_references": [],
